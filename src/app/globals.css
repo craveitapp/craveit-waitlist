@@ -5,7 +5,7 @@
   --foreground: #171717;
 
     /* Base colors */
-  --color-primary: #ff6b35;
+  --color-primary: #E96029;
   --color-text: #1c1c1c;
   --color-bg: #ffffff;
 
@@ -26,7 +26,7 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-      --color-primary: #ff6b35;
+      --color-primary: #E96029;
     --color-text: #ededed;
     --color-bg: #0a0a0a;
   }

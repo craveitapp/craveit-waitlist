@@ -97,13 +97,13 @@ export default function HeroSection() {
         {/* Star Rating */}
         <motion.div
           variants={fadeInUp}
-          className="mb-4 flex items-center justify-center text-orange-400 md:mt-20 md:mb-8"
+          className="mb-4 flex items-center justify-center md:mt-20 md:mb-8"
         >
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.5 }}
-            className="ml-2 font-medium font-poppins text-xs text-[#FF6B35] md:text-base"
+            className="ml-2 font-medium font-poppins text-xs text-[#E96029] md:text-base"
           >
             Social food discovery meets quick delivery.
           </motion.span>
@@ -133,7 +133,7 @@ export default function HeroSection() {
             <TallyButton
               formId="wgBvg1"
               label="Get Early Access"
-              className="cursor-pointer m-6 md:m-0 font-poppins font-semibold rounded-lg bg-[#FF6B35]  text-sm text-white shadow-lg transition duration-300 ease-in-out hover:bg-transparent hover:text-[#FF6B35] hover:border hover:border-[#FF6B35] md:rounded-lg px-8 py-2.5 md:text-[16px]"
+              className="cursor-pointer m-6 md:m-0 font-poppins font-semibold rounded-lg bg-[#E96029]  text-sm text-white shadow-lg transition duration-300 ease-in-out hover:bg-transparent hover:text-[#E96029] hover:border hover:border-[#E96029] md:rounded-xl px-8 py-6 md:text-[16px]"
             />
           </motion.div>
         </motion.div>

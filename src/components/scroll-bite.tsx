@@ -82,7 +82,9 @@ export default function ScrollToBite() {
             <h3 className="text-xl font-poppins font-semibold tracking-[0.02em] text-black">
               {platform.title}
             </h3>
-            <p className=" text-sm md:text-base text-gray-700 ">{platform.description}</p>
+            <p className=" text-sm md:text-base font-inter font-normal text-[#4B4B4B] ">
+              {platform.description}
+            </p>
           </motion.div>
         ))}
       </div>

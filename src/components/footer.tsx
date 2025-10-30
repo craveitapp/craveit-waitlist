@@ -35,7 +35,7 @@ const Footer = () => {
               <li key={item.name}>
                 <a
                   href={item.href}
-                  className="text-[#F3F3F3] hover:text-[#FF6B35] transition duration-300 font-poppins md:text-base text-sm"
+                  className="text-[#F3F3F3] hover:text-[#E96029] transition duration-300 font-poppins md:text-base text-sm"
                 >
                   {item.name}
                 </a>
@@ -69,10 +69,25 @@ const Footer = () => {
                 className="w-[30px] h-7 md:w-[60px] md:h-14"
               />
             </Link>
-            <Link href="#" className="transition duration-300 hover:opacity-80">
+            <Link
+              href="http://tiktok.com/@getcraveit"
+              className="transition duration-300 hover:opacity-80"
+            >
               <Image
                 src="/icons/tiktok.svg"
                 alt="TikTok"
+                width={60}
+                height={56}
+                className="w-[30px] h-7 md:w-[60px] md:h-14"
+              />
+            </Link>
+            <Link
+              href="https://www.instagram.com/getcraveit_"
+              className="transition duration-300 hover:opacity-80"
+            >
+              <Image
+                src="/icons/instagram.svg"
+                alt="Instagram"
                 width={60}
                 height={56}
                 className="w-[30px] h-7 md:w-[60px] md:h-14"
@@ -94,7 +109,7 @@ const Footer = () => {
         </div>
       </div>
       {/* Copyright */}
-      <div className="mt-16 w-full pt-8 border-t border-[#F3F3F3]/20">
+      <div className="mt-10 w-full pt-8 border-t border-[#F3F3F3]/20">
         <p className="text-center px-12 text-[#F3F3F3] font-poppins text-sm">
           © {new Date().getFullYear()} Craveit Technologies Limited. All rights reserved.
         </p>

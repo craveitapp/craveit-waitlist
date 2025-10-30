@@ -80,7 +80,7 @@ export default function WhatsDiiferent() {
             <h3 className="text-xl font-poppins font-semibold tracking-[0.02em] text-black">
               {platform.title}
             </h3>
-            <p className=" text-sm md:text-base font-inter text-gray-700 ">
+            <p className=" text-sm md:text-base font-normal font-inter text-[#4B4B4B] ">
               {platform.description}
             </p>
           </motion.div>

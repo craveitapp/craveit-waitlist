@@ -70,11 +70,7 @@ const TallyButton: React.FC<TallyButtonProps> = ({
   };
 
   return (
-    <motion.div
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.98 }}
-      className="flex justify-center"
-    >
+    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }} className="flex ">
       <Button
         onClick={handleClick}
         className={`rounded-xl bg-primary px-6 py-3 shadow-lg hover:bg-secondary transition ${className}`}

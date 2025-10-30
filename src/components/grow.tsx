@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { easeOut, motion, Variants } from "framer-motion";
-import Link from "next/link";
 import TallyButton from "./TallyBtn";
 
 const fadeInUp: Variants = {
@@ -32,7 +31,7 @@ const container: Variants = {
     opacity: 1,
     transition: {
       staggerChildren: 0.2,
-      ease: easeOut, // ✅ FIXED: using easing function, not string
+      ease: easeOut, // FIXED: using easing function, not string
     },
   },
 };
@@ -68,7 +67,7 @@ export default function Grow() {
         </p>
       </motion.div>
 
-      {/* 🌟 Animated section */}
+      {/*  Animated section */}
       <motion.div
         className="flex flex-col-reverse md:flex-row items-start md:justify-between max-w-7xl mx-auto gap-8"
         variants={container}
@@ -116,15 +115,20 @@ export default function Grow() {
           ))}
 
           {/* Call to Action Button */}
-          <motion.div variants={item}>
+          {/* <motion.div variants={item}>
             <motion.div variants={buttonHover} whileHover="hover" whileTap="tap">
               <TallyButton
                 formId="wdL4vy"
                 label="Sell on CraveIt"
-                className="cursor-pointer mt-8 font-poppins font-semibold rounded-lg bg-[#FF6B35] text-sm text-white shadow-lg transition duration-300 ease-in-out hover:bg-transparent hover:text-[#FF6B35] hover:border hover:border-[#FF6B35] md:rounded-lg px-8 py-2.5 md:text-[16px]"
+                className="cursor-pointer mt-8 font-poppins font-semibold rounded-lg bg-[#E96029] text-sm text-white shadow-lg transition duration-300 ease-in-out hover:bg-transparent hover:text-[#E96029] hover:border hover:border-[#E96029] md:rounded-lg px-8 py-2.5 md:text-[16px]"
               />
             </motion.div>
-          </motion.div>
+          </motion.div> */}
+          <TallyButton
+            formId="wdL4vy"
+            label="Sell on CraveIt"
+            className="cursor-pointer mt-8 font-poppins font-semibold rounded-lg bg-[#E96029] text-sm text-white shadow-lg transition duration-300 ease-in-out hover:bg-transparent hover:text-[#E96029] hover:border hover:border-[#E96029] md:rounded-xl px-8 py-6 md:text-base"
+          />
         </motion.div>
       </motion.div>
       {/* section ends here */}
