@@ -4,7 +4,6 @@ import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
-// Declare the Tally type globally for TypeScript
 declare global {
   interface Window {
     Tally?: {
@@ -56,7 +55,6 @@ const TallyButton: React.FC<TallyButtonProps> = ({
     e.preventDefault();
     onBeforeOpen?.();
 
-    //  Small delay to ensure script is ready
     setTimeout(() => {
       if (window.Tally) {
         window.Tally.openPopup(formId, {
