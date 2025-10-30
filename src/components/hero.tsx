@@ -114,7 +114,7 @@ export default function HeroSection() {
           variants={fadeInUp}
           className="font-poppins font-semibold px-2 pb-6 text-center text-[26px] leading-[35px]  -tracking-wide text-[#1C1C1C] md:pb-8 md:text-[64px] md:leading-[72px]"
         >
-          Discover & Order Your Favorite <br className="hidden md:block" /> Meals Fast
+          Discover & Order Your <br className="hidden md:block" /> Cravings Fast
         </motion.h1>
 
         {/* Sub-paragraph */}
@@ -122,9 +122,8 @@ export default function HeroSection() {
           variants={fadeInUp}
           className="text-base mb-2 font-inter md:max-w-4xl md:px-8 text-center -tracking-wide text-[#6A6A6A] md:mb-8 md:text-2xl md:leading-[34px] lg:text-xl"
         >
-          Discover mouthwatering meals through short videos from trusted local vendors. See it,{" "}
-          <br className="hidden md:block" /> crave it, tap to order, and get it delivered hot
-          and fast.
+          Scroll short, mouthwatering videos from real food vendors near you and get your meal{" "}
+          <br className="hidden md:block" /> delivered hot and fast.
         </motion.p>
 
         {/* Call to Action Button */}

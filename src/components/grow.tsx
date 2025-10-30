@@ -59,8 +59,8 @@ export default function Grow() {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <h2 className="mb-4 font-poppins text-2xl text-[#1C1C1C] font-bold lg:text-4xl max-w-lg mx-auto">
-          Grow With CraveIt
+        <h2 className="mb-4 font-inter text-2xl text-[#1C1C1C] font-semibold lg:text-4xl  px-6 mx-auto">
+          Grow Your Food Business with CraveIt
         </h2>
         <p className="text-base mx-auto font-inter max-w-md md:max-w-xl md:px-8 px-6 text-[#4B4B4B] lg:text-lg">
           Sell more, reach more, and make your meals go viral.
@@ -92,17 +92,17 @@ export default function Grow() {
           className="md:w-1/2 md:mt-8 px-6 md:px-0 flex flex-col gap-3"
         >
           <p className="font-inter text-[#4B4B4B] leading-[30px] md:leading-[41px] text-sm md:text-base">
-            CraveIt helps local vendors and home chefs sell beyond their street, reaching
-            thousands of customers through short food videos. Manage your orders easily, track
-            deliveries in real time, and enjoy instant payments.
+            CraveIt helps local vendors and home chefs reach thousands beyond their street,
+            through short, mouthwatering food videos that make customers crave. Manage every
+            order easily, track deliveries in real time, and get paid instantly.
           </p>
 
           {/* Features */}
           {[
-            "Get discovered by more customers",
-            "Manage and deliver orders easily",
-            "Flexible instant or scheduled delivery",
-            "Fast payments and clear records",
+            "Reach more customers across your city",
+            "Manage and deliver orders in one place",
+            "Flexible delivery: instant or scheduled",
+            "Instant, transparent payments",
           ].map((text, index) => (
             <motion.div
               key={index}
@@ -110,7 +110,7 @@ export default function Grow() {
               className="flex flex-row items-center gap-2"
             >
               <Image src="/icons/mark-icon.svg" alt="Check mark icon" width={20} height={20} />
-              <p className="font-inter text-[#4B4B4B] text-base">{text}</p>
+              <p className="font-inter text-[#4B4B4B] text-sm md:text-base">{text}</p>
             </motion.div>
           ))}
 
