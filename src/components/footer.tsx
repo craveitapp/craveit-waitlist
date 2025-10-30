@@ -45,7 +45,10 @@ const Footer = () => {
 
           {/* Social Media Icons */}
           <div className="flex items-center justify-center space-x-4 md:space-x-8">
-            <Link href="#" className="transition duration-300 hover:opacity-80">
+            <Link
+              href="http://linkedin.com/company/getcraveit"
+              className="transition duration-300 hover:opacity-80"
+            >
               <Image
                 src="/icons/linkedin.svg"
                 alt="LinkedIn"
@@ -54,7 +57,10 @@ const Footer = () => {
                 className="w-[30px] h-7 md:w-[60px] md:h-14"
               />
             </Link>
-            <Link href="#" className="transition duration-300 hover:opacity-80">
+            <Link
+              href="https://x.com/getcraveit"
+              className="transition duration-300 hover:opacity-80"
+            >
               <Image
                 src="/icons/x.svg"
                 alt="X (Twitter)"
@@ -72,7 +78,10 @@ const Footer = () => {
                 className="w-[30px] h-7 md:w-[60px] md:h-14"
               />
             </Link>
-            <Link href="#" className="transition duration-300 hover:opacity-80">
+            <Link
+              href="http://facebook.com/getcraveit"
+              className="transition duration-300 hover:opacity-80"
+            >
               <Image
                 src="/icons/facebook.svg"
                 alt="Facebook"
