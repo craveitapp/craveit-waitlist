@@ -33,7 +33,7 @@ export default function MobileNav() {
   }, []);
 
   return (
-    <div className="fixed top-0 z-50 flex w-full items-center justify-between bg-white px-4 py-5 lg:hidden">
+    <div className="fixed top-0 z-50 flex w-full items-center justify-between bg-white px-6 py-5 lg:hidden">
       {/* Logo */}
       <LogoNav />
 
@@ -54,7 +54,7 @@ export default function MobileNav() {
 
         {/* Slide-out Menu */}
         <SheetContent side="top" className="h-screen bg-white">
-          <div className="flex items-center justify-between bg-white px-4 py-5">
+          <div className="flex items-center justify-between bg-white px-6 py-5">
             <LogoNav />
             <Button
               className="cursor-pointer py-3.5"
