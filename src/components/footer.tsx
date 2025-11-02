@@ -6,10 +6,6 @@ const Footer = () => {
     { name: "Home", href: "#home" },
     { name: "How It Works", href: "#works" },
     { name: "Contact Us", href: "mailto:getcraveitapp@gmail.com" },
-    // {
-    //   name: "Contact Us",
-    //   href: "mailto:getcraveitapp@gmail.com?subject=Craveit%20Inquiry&body=Hello%20Craveit%20Team,",
-    // },
     { name: "Faqs", href: "#faqs" },
   ];
 
