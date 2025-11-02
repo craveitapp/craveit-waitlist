@@ -32,8 +32,6 @@ const Footer = () => {
             Nigeria&apos;s first social food delivery app
           </p>
 
-          {/* Navigation Links */}
-
           <ul className="flex items-center text-center mb-6 gap-6 md:gap-8">
             {navigation.map((item) => (
               <li key={item.name}>
