@@ -24,7 +24,7 @@ const Footer = () => {
             />
           </Link>
 
-          <p className="text-[#FFF8F6] text-base font-poppins font-medium -mt-6 mb-6">
+          <p className="text-[#FFF8F6] text-base font-poppins font-medium  mb-6">
             Nigeria&apos;s first social food delivery app
           </p>
 

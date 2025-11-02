@@ -39,7 +39,7 @@ export default function Navbar() {
   return (
     <>
       {isDesktop ? (
-        <nav className="fixed top-0 z-50 py-3 w-full bg-white px-[120px] text-[#1C1C1C] shadow-sm">
+        <nav className="fixed top-0 z-50 py-5 w-full bg-white px-[120px] text-[#1C1C1C] shadow-sm">
           <div className="mx-auto flex items-center justify-between">
             {/* Logo Section */}
             <div className="block">
