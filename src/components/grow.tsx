@@ -59,11 +59,13 @@ export default function Grow() {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <h2 className="mb-4 font-inter text-2xl text-[#1C1C1C] font-semibold lg:text-4xl  px-6 mx-auto">
-          Grow Your Food Business with CraveIt
+        <h2 className="mb-4 font-inter text-2xl text-[#1C1C1C] font-semibold lg:text-4xl px-6 mx-auto">
+          <span className="hidden md:inline">Grow Your Food Business with CraveIt</span>
+          <span className="inline md:hidden">Grow with CraveIt</span>
         </h2>
+
         <p className="text-base mx-auto font-inter max-w-md md:max-w-xl md:px-8 px-6 text-[#4B4B4B] lg:text-lg">
-          Sell more, reach more, and make your meals go viral.
+          Turn your meals into content. Let the city crave what you cook.
         </p>
       </motion.div>
 
@@ -92,9 +94,9 @@ export default function Grow() {
           className="md:w-1/2 md:mt-8 px-6 md:px-0 flex flex-col gap-3"
         >
           <p className="font-inter text-[#4B4B4B] leading-[30px] md:leading-[41px] text-sm md:text-base">
-            CraveIt helps local vendors and home chefs reach thousands beyond their street,
-            through short, mouthwatering food videos that make customers crave. Manage every
-            order easily, track deliveries in real time, and get paid instantly.
+            Turn your meals into content that sells. Show your food in short videos, reach more
+            people, Manage every order easily, track deliveries in real time, and get paid
+            instantly.
           </p>
 
           {/* Features */}

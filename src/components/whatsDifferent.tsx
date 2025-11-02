@@ -6,19 +6,21 @@ import { easeOut, motion } from "framer-motion";
 export default function WhatsDiiferent() {
   const platforms = [
     {
-      title: "See It Before You Order",
-      description: "Short videos from real vendors, no surprises, just mouthwatering reality.",
+      title: "Real Feeds, Real Food",
+      description:
+        "You’re not scrolling stock photos, you’re watching real vendors show what they make.Every meal looks, sounds, and feels true to life.",
       image: "/icons/video.svg",
       alt: "video icon",
     },
     {
       title: "Fast & Fresh Every Time",
-      description: "Trusted vendors. Reliable riders. Hot food, always on time.",
+      description:
+        "The meals you love, made around you. From local kitchens to your door, simple and true.",
       image: "/icons/ride.svg",
       alt: "bike ride icon",
     },
     {
-      title: "Built for Local Flavors",
+      title: "Built for Local Flavor",
       description:
         "From abacha to jollof, we spotlight Nigerian meals and vendors you actually know.",
       image: "/icons/cart.svg",

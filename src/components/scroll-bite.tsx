@@ -8,14 +8,13 @@ export default function ScrollToBite() {
     {
       title: "Discover Through Short Videos",
       description:
-        "Scroll short, mouthwatering clips from real vendors near you, see the suya smoke and the jollof steam, then tap what you want.",
+        "Scroll short, mouthwatering vidoes from real vendors near you, see the jollof rice steam and the suya smoke, then tap what you want.",
       image: "/icons/video.svg",
       alt: "video icon",
     },
     {
       title: "Order in Seconds",
-      description:
-        "One-tap add, quick checkout, and your order is confirmed , no long forms, no waiting.",
+      description: "One-tap add, quick checkout, and your order is confirmed.",
       image: "/icons/cart.svg",
       alt: "cart icon",
     },

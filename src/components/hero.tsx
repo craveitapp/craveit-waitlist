@@ -105,7 +105,7 @@ export default function HeroSection() {
             transition={{ delay: 0.8, duration: 0.5 }}
             className="ml-2 font-medium font-poppins text-xs text-[#E96029] md:text-base"
           >
-            Social food discovery meets quick delivery.
+            See it. Crave it. Tap to order.
           </motion.span>
         </motion.div>
 
@@ -114,16 +114,17 @@ export default function HeroSection() {
           variants={fadeInUp}
           className="font-poppins font-semibold px-2 pb-6 text-center text-[26px] leading-[35px]  -tracking-wide text-[#1C1C1C] md:pb-8 md:text-[64px] md:leading-[72px]"
         >
-          Discover & Order Your <br className="hidden md:block" /> Cravings Fast
+          Your Cravings, One Tap
+          <br className="hidden md:block" /> Away.
         </motion.h1>
 
         {/* Sub-paragraph */}
         <motion.p
           variants={fadeInUp}
-          className="text-base mb-2 font-inter md:max-w-4xl md:px-8 text-center -tracking-wide text-[#6A6A6A] md:mb-8 md:text-2xl md:leading-[34px] lg:text-xl"
+          className="text-base mb-2 font-inter md:max-w-4xl md:px-8 text-center -tracking-wide text-[#6A6A6A] md:mb-4 md:text-2xl md:leading-[34px] lg:text-xl"
         >
-          Scroll short, mouthwatering videos from real food vendors near you and get your meal{" "}
-          <br className="hidden md:block" /> delivered hot and fast.
+          Scroll short videos from real vendors near you. Tap what you crave and enjoy{" "}
+          <br className="hidden md:block" /> every bite.
         </motion.p>
 
         {/* Call to Action Button */}

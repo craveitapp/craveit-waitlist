@@ -9,7 +9,8 @@ export default function Experience() {
           Be the First to Experience CraveIt
         </h2>
         <p className="text-md mb-4 md:mb-12 mx-auto font-poppins  md:px-8 px-4 text-[#4B4B4B] lg:text-lg">
-          Food delivery, reimagined for Nigeria. Social, local, and fast. Don&apos;t miss it.
+          Food delivery made visual, local, and real. Join the waitlist and get early{" "}
+          <br className="hidden md:block" /> access when we launch.
         </p>
 
         <TallyButton
