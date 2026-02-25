@@ -1,10 +1,6 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { Star } from "lucide-react";
-import { backOut, easeOut, motion } from "framer-motion";
+import { easeOut, motion } from "framer-motion";
 import TallyButton from "./TallyBtn";
 
 // Animation variants
@@ -30,50 +26,12 @@ const fadeInUp = {
   },
 };
 
-const slideInFromBottom = {
-  hidden: { opacity: 0, y: 60 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 1,
-      ease: easeOut,
-      delay: 0.6,
-    },
-  },
-};
-
-const starAnimation = {
-  hidden: { opacity: 0, scale: 0 },
-  visible: (i: number) => ({
-    opacity: 1,
-    scale: 1,
-    transition: {
-      delay: i * 0.1,
-      duration: 0.5,
-      ease: backOut,
-    },
-  }),
-};
-
 const buttonHover = {
   hover: {
     scale: 1.05,
     transition: { duration: 0.2 },
   },
   tap: { scale: 0.98 },
-};
-
-const featureItemVariants = {
-  hidden: { opacity: 0, x: -20 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.6,
-      ease: easeOut,
-    },
-  },
 };
 
 export default function HeroSection() {

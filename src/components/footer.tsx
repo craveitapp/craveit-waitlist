@@ -7,6 +7,7 @@ const Footer = () => {
     { name: "How It Works", href: "#works" },
     { name: "Contact Us", href: "mailto:getcraveitapp@gmail.com" },
     { name: "Faqs", href: "#faqs" },
+    { name: "Privacy Policy", href: "/privacypolicy" },
   ];
 
   return (
