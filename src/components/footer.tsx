@@ -2,90 +2,105 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
-  const navigation = [
-    { name: "Home", href: "#home" },
-    { name: "How It Works", href: "#works" },
+  const quickLinks = [
+    { name: "Vendors", href: "/vendor" },
+    { name: "Blog", href: "#" },
     { name: "Contact Us", href: "mailto:getcraveitapp@gmail.com" },
-    { name: "Faqs", href: "#faqs" },
-    { name: "Privacy Policy", href: "/privacypolicy" },
+  ];
+
+  const support = [
+    { name: "Terms of Service", href: "/terms-of-service" },
+    { name: "Privacy Policy", href: "/privacy-policy" },
+    { name: "Refund Policy", href: "/refund-policy" },
+  ];
+
+  const social = [
+    { name: "X (Formerly Twitter)", href: "https://x.com/getcraveit" },
+    { name: "TikTok", href: "http://tiktok.com/@getcraveit" },
+    { name: "LinkedIn", href: "http://linkedin.com/company/getcraveit" },
+    { name: "Facebook", href: "http://facebook.com/getcraveit" },
   ];
 
   return (
-    <footer className="bg-[#1C1C1C]  py-16">
-      <div className="container px-0 md:px-[120px] mx-auto">
-        <div className="flex flex-col items-center justify-center gap-3">
-          {/* Logo and social icons */}
-          <Link href="/" className="inline-block">
-            <Image
-              src="/footer-logo.svg"
-              alt="Craveit Logo"
-              width={150}
-              height={80}
-              className="object-contain"
-            />
-          </Link>
+    <footer className="bg-[#1C1410] pt-16 pb-8">
+      <div className="w-full px-6 md:px-[120px]">
+        {/* Main Footer Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_0.8fr_0.8fr_0.8fr] gap-10 md:gap-8">
+          {/* Brand Column */}
+          <div className="space-y-4 lg:pr-8">
+            <Link href="/" className="inline-block">
+              <Image
+                src="/footer-logo.svg"
+                alt="CraveIt"
+                width={180}
+                height={52}
+                className="h-14 w-auto object-contain"
+              />
+            </Link>
+            <p className="text-[#9A9A9A] text-sm font-inter leading-[28px] ">
+              Launching soon in Enugu. Discover food you never knew existed near you.
+            </p>
+          </div>
 
-          <p className="text-[#FFF8F6] text-base font-poppins font-medium  mb-6">
-            Nigeria&apos;s first social food delivery app
-          </p>
+          {/* Quick Links */}
+          <div className="space-y-4">
+            <h3 className="text-white font-poppins font-semibold text-base">Quick Links</h3>
+            <ul className="space-y-3">
+              {quickLinks.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    className="text-[#9A9A9A] hover:text-white transition duration-300 font-inter text-sm"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-          <ul className="flex items-center text-center mb-6 gap-6 md:gap-8">
-            {navigation.map((item) => (
-              <li key={item.name}>
-                <a
-                  href={item.href}
-                  className="text-[#F3F3F3] hover:text-[#E96029] transition duration-300 font-poppins md:text-base text-sm"
-                >
-                  {item.name}
-                </a>
-              </li>
-            ))}
-          </ul>
+          {/* Support */}
+          <div className="space-y-4">
+            <h3 className="text-white font-poppins font-semibold text-base">Support</h3>
+            <ul className="space-y-3">
+              {support.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    className="text-[#9A9A9A] hover:text-white transition duration-300 font-inter text-sm"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-          {/* Social Media Icons */}
-          <div className="flex items-center justify-center space-x-6 md:space-x-8 lg:space-x-10">
-            {[
-              {
-                href: "http://linkedin.com/company/getcraveit",
-                src: "/icons/linkedin.svg",
-                alt: "LinkedIn",
-              },
-              { href: "https://x.com/getcraveit", src: "/icons/x.svg", alt: "X (Twitter)" },
-              {
-                href: "http://tiktok.com/@getcraveit",
-                src: "/icons/tiktok.svg",
-                alt: "TikTok",
-              },
-              {
-                href: "https://www.instagram.com/getcraveit_",
-                src: "/icons/instagram.svg",
-                alt: "Instagram",
-              },
-              {
-                href: "http://facebook.com/getcraveit",
-                src: "/icons/facebook.svg",
-                alt: "Facebook",
-              },
-            ].map(({ href, src, alt }) => (
-              <Link key={alt} href={href} className="transition duration-300 hover:opacity-80">
-                <div className="relative w-auto h-auto md:w-auto md:h-auto">
-                  <Image
-                    src={src}
-                    alt={alt}
-                    width={60}
-                    height={60}
-                    className="h-auto w-auto max-h-8 max-w-8 md:w-[60px] md:h-14 lg:max-h-none lg:max-w-none object-contain"
-                  />
-                </div>
-              </Link>
-            ))}
+          {/* Stay Connected */}
+          <div className="space-y-4">
+            <h3 className="text-white font-poppins font-semibold text-base">Stay Connected</h3>
+            <ul className="space-y-3">
+              {social.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#9A9A9A] hover:text-white transition duration-300 font-inter text-sm"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
-      {/* Copyright */}
-      <div className="mt-10 w-full pt-8 border-t border-[#F3F3F3]/20">
-        <p className="text-center px-12 font-medium text-[#F3F3F3] font-poppins md:text-sm lg:text-base text-xs">
-          © {new Date().getFullYear()} Craveit Technologies Limited. All rights reserved.
+
+      {/* Copyright Bar - Full Width */}
+      <div className="mt-16 pt-6 border-t border-[#3A3028] px-6 md:px-[120px]">
+        <p className="text-[#9A9A9A] text-center font-inter text-sm">
+          © CraveIt Technologies Limited. All rights reserved.
         </p>
       </div>
     </footer>
