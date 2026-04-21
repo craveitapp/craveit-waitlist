@@ -19,17 +19,17 @@ export default function DiscoverFood() {
               visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: easeOut } },
             }}
           >
-            <span className="font-inter text-xs tracking-[0.2em] text-[#6A6A6A] uppercase">
+            <span className="font-secondary text-xs tracking-[0.2em] text-text-secondary uppercase">
               Coming Soon
             </span>
-            <h2 className="font-poppins font-bold text-[32px] leading-[42px] md:text-[48px] md:leading-[58px] text-[#1C1C1C]">
+            <h2 className="font-primary font-bold text-[32px] leading-[42px] md:text-[48px] md:leading-[58px] text-text-primary">
               Discover food you
               <br />
               never knew existed
               <br />
               near you.
             </h2>
-            <p className="font-inter text-sm md:text-base text-[#6A6A6A] leading-relaxed max-w-md">
+            <p className="font-secondary text-sm md:text-base text-text-secondary leading-relaxed max-w-md">
               The best food near you has been hiding. CraveIt is launching soon and we are
               building the feed right now. Join the waitlist and be among the first to scroll,
               discover, and order.

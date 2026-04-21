@@ -88,13 +88,13 @@ export default function Navbar() {
   return (
     <>
       {isDesktop ? (
-        <nav className=" top-0 z-50 py-5 w-full bg-[#F8EEE0] px-[120px] text-[#1C1C1C]">
+        <nav className=" top-0 z-50 py-5 w-full bg-brand-light px-[120px] text-text-primary">
           <div className="mx-auto flex items-center justify-center">
             <Logo width={170} height={40} />
           </div>
         </nav>
       ) : (
-        <nav className=" top-0 z-50 py-5 w-full bg-[#F8EEE0] px-[120px] text-[#1C1C1C]">
+        <nav className=" top-0 z-50 py-5 w-full bg-brand-light px-[120px] text-text-primary">
           <div className="mx-auto flex items-center justify-center">
             <Logo width={170} height={40} />
           </div>

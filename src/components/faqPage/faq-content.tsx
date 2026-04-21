@@ -157,15 +157,17 @@ const FAQItemComponent = ({
   onToggle: () => void;
 }) => {
   return (
-    <div className="border border-[#E5E5E5] rounded-xl bg-white overflow-hidden">
+    <div className="border border-gray-200 rounded-xl bg-white overflow-hidden">
       <button
         className="flex w-full cursor-pointer items-center justify-between text-left px-5 py-4 focus:outline-none"
         onClick={onToggle}
       >
-        <span className="pr-4 text-sm font-medium font-poppins text-[#1C1C1C]">
+        <span className="pr-4 text-sm font-medium font-primary text-text-primary">
           {item.question}
         </span>
-        <span className="text-[#1C1C1C] text-lg font-light shrink-0">{isOpen ? "−" : "+"}</span>
+        <span className="text-text-primary text-lg font-light shrink-0">
+          {isOpen ? "−" : "+"}
+        </span>
       </button>
 
       <AnimatePresence initial={false}>
@@ -177,7 +179,7 @@ const FAQItemComponent = ({
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
           >
-            <p className="px-5 pb-4 text-sm font-inter text-[#6A6A6A] leading-relaxed">
+            <p className="px-5 pb-4 text-sm font-secondary text-text-secondary leading-relaxed">
               {item.answer}
             </p>
           </motion.div>
@@ -219,8 +221,8 @@ export default function FAQContent() {
               onClick={() => setActiveTab(tab.id)}
               className={`px-5 py-2 cursor-pointer rounded-full text-sm font-medium whitespace-nowrap transition-all duration-200 ${
                 activeTab === tab.id
-                  ? "bg-[#E96029] text-white"
-                  : "bg-[#F5F5F5] text-[#6A6A6A] hover:bg-[#EBEBEB]"
+                  ? "bg-brand text-white"
+                  : "bg-gray-100 text-text-secondary hover:bg-gray-200"
               }`}
             >
               {tab.label}
@@ -239,7 +241,7 @@ export default function FAQContent() {
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.3 }}
               >
-                <h3 className="font-poppins font-semibold text-lg text-[#1C1C1C] mb-4">
+                <h3 className="font-primary font-semibold text-lg text-text-primary mb-4">
                   {category.label}
                 </h3>
                 <div className="space-y-3">

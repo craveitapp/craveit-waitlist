@@ -40,7 +40,7 @@ export default function ScrollToBite() {
   };
 
   return (
-    <section className="bg-[#F5F0E8] px-6 md:px-[120px] py-16 md:py-24">
+    <section className="bg-bg-secondary px-6 md:px-[120px] py-16 md:py-24">
       {/* Section Header */}
       <motion.div
         className="mb-12 text-center"
@@ -53,8 +53,8 @@ export default function ScrollToBite() {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <h2 className="font-poppins font-bold text-[28px] leading-[36px] md:text-[40px] md:leading-[52px] text-[#1C1C1C]">
-          From <span className="text-[#E96029] italic">scroll</span> to doorstep
+        <h2 className="font-primary font-bold text-[28px] leading-[36px] md:text-[40px] md:leading-[52px] text-text-primary">
+          From <span className="text-brand italic">scroll</span> to doorstep
           <br />
           in three steps.
         </h2>
@@ -78,10 +78,10 @@ export default function ScrollToBite() {
             </div>
             {/* Content */}
             <div className="p-5 md:p-6">
-              <h3 className="font-poppins font-semibold text-base md:text-lg text-[#1C1C1C] mb-2">
+              <h3 className="font-primary font-semibold text-base md:text-lg text-text-primary mb-2">
                 {step.title}
               </h3>
-              <p className="font-inter text-sm text-[#6A6A6A] leading-relaxed">
+              <p className="font-secondary text-sm text-text-secondary leading-relaxed">
                 {step.description}
               </p>
             </div>

@@ -27,7 +27,7 @@ export default function BuiltForTrust() {
         "Our riders pick up and deliver every order with care. Fast, consistent, and handled from kitchen to door.",
       image: "/images/trust-illust-3.png",
       alt: "Reliable delivery illustration",
-      bgColor: "bg-[#E96029]",
+      bgColor: "bg-brand",
     },
   ];
 
@@ -41,7 +41,7 @@ export default function BuiltForTrust() {
   };
 
   return (
-    <section className="bg-[#F5F0E8] px-6 md:px-[120px] py-16 md:py-24">
+    <section className="bg-bg-secondary px-6 md:px-[120px] py-16 md:py-24">
       {/* Section Header */}
       <motion.div
         className="mb-12 text-center"
@@ -54,7 +54,7 @@ export default function BuiltForTrust() {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <h2 className="font-poppins font-bold text-[28px] leading-[36px] md:text-[40px] md:leading-[52px] text-[#1C1C1C]">
+        <h2 className="font-primary font-bold text-[28px] leading-[36px] md:text-[40px] md:leading-[52px] text-text-primary">
           Built for trust from kitchen
           <br />
           to your door.
@@ -79,10 +79,10 @@ export default function BuiltForTrust() {
             </div>
             {/* Content */}
             <div className="p-5 md:p-6">
-              <h3 className="font-poppins font-semibold text-base md:text-lg text-[#1C1C1C] mb-2">
+              <h3 className="font-primary font-semibold text-base md:text-lg text-text-primary mb-2">
                 {card.title}
               </h3>
-              <p className="font-inter text-sm text-[#6A6A6A] leading-relaxed">
+              <p className="font-secondary text-sm text-text-secondary leading-relaxed">
                 {card.description}
               </p>
             </div>

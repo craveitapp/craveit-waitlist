@@ -10,7 +10,7 @@ export default function VendorCook() {
       description: "CraveIt gives food vendors who cook real food the visibility they deserve.",
       image: "/images/vendor-cook-illust-1.png",
       alt: "Vendor cooking food",
-      bgColor: "bg-[#F6F8FA]",
+      bgColor: "bg-bg-secondary",
     },
     {
       title: "Video gets you seen",
@@ -18,7 +18,7 @@ export default function VendorCook() {
         "Your food isn't buried in a menu. It plays as a short video right on people's screens. Customers see exactly what they are buying before they order.",
       image: "/images/vendor-cook-illust-2.png",
       alt: "Vendor cooking food",
-      bgColor: "bg-[#F6F8FA]",
+      bgColor: "bg-bg-secondary",
     },
     {
       title: "Grow without the guesswork",
@@ -26,7 +26,7 @@ export default function VendorCook() {
         "Track your orders and watch your customer base grow, all from your vendor app.",
       image: "/images/vendor-cook-illust-3.png",
       alt: "illustration",
-      bgColor: "bg-[#F6F8FA]",
+      bgColor: "bg-bg-secondary",
     },
   ];
 
@@ -40,7 +40,7 @@ export default function VendorCook() {
   };
 
   return (
-    <section className="bg-[#F6F8FA] px-6 md:px-[120px] py-16 md:py-24">
+    <section className="bg-bg-secondary px-6 md:px-[120px] py-16 md:py-24">
       {/* Section Header */}
       <motion.div
         className="mb-12 text-center"
@@ -53,10 +53,10 @@ export default function VendorCook() {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <h2 className="font-poppins font-semibold text-[28px] leading-[36px] md:text-[40px] md:leading-[52px] text-[#1C1C1C]">
+        <h2 className="font-primary font-semibold text-[28px] leading-[36px] md:text-[40px] md:leading-[52px] text-text-primary">
           Built for vendors who
           <br />
-          actually <span className="text-[#E96029] italic">cook.</span>
+          actually <span className="text-brand italic">cook.</span>
         </h2>
       </motion.div>
 
@@ -78,10 +78,10 @@ export default function VendorCook() {
             </div>
             {/* Content */}
             <div className="p-5 md:p-6">
-              <h3 className="font-poppins font-semibold text-base md:text-lg text-[#1C1C1C] mb-2">
+              <h3 className="font-primary font-semibold text-base md:text-lg text-text-primary mb-2">
                 {step.title}
               </h3>
-              <p className="font-inter text-sm text-[#6A6A6A] leading-relaxed">
+              <p className="font-secondary text-sm text-text-secondary leading-relaxed">
                 {step.description}
               </p>
             </div>

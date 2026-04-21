@@ -12,7 +12,7 @@ export default function Grow() {
   ];
 
   return (
-    <section className="bg-[#F5F0E8] px-6 md:px-[120px] py-16 md:py-24">
+    <section className="bg-bg-secondary px-6 md:px-[120px] py-16 md:py-24">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
           {/* Left: Illustration */}
@@ -49,11 +49,11 @@ export default function Grow() {
               },
             }}
           >
-            <span className="font-inter text-xs tracking-[0.15em] text-[#6A6A6A] uppercase">
+            <span className="font-secondary text-xs tracking-[0.15em] text-text-secondary uppercase">
               For Vendors
             </span>
 
-            <h2 className="font-poppins font-normal text-[28px] leading-[38px] md:text-[40px] md:leading-[80px] text-[#1C1C1C]">
+            <h2 className="font-primary font-normal text-[28px] leading-[38px] md:text-[40px] md:leading-[80px] text-text-primary">
               Grow your business where
               <br />
               customers are
@@ -61,7 +61,7 @@ export default function Grow() {
               already searching.
             </h2>
 
-            <p className="font-inter text-sm md:text-base text-[#6A6A6A] leading-relaxed">
+            <p className="font-secondary text-sm md:text-base text-text-secondary leading-relaxed">
               CraveIt brings your food directly to hungry customers through video. We help you
               get set up and go live fast.
             </p>
@@ -70,7 +70,7 @@ export default function Grow() {
             <div className="space-y-3">
               {features.map((text, index) => (
                 <div key={index} className="flex items-center gap-3">
-                  <div className="w-5 h-5 rounded-full bg-[#E96029] flex items-center justify-center shrink-0">
+                  <div className="w-5 h-5 rounded-full bg-brand flex items-center justify-center shrink-0">
                     <svg
                       className="w-3 h-3 text-white"
                       fill="none"
@@ -85,7 +85,7 @@ export default function Grow() {
                       />
                     </svg>
                   </div>
-                  <p className="font-inter text-sm text-[#6A6A6A]">{text}</p>
+                  <p className="font-secondary text-sm text-text-secondary">{text}</p>
                 </div>
               ))}
             </div>
@@ -94,7 +94,7 @@ export default function Grow() {
             <TallyButton
               formId="wdL4vy"
               label="Join The Waitlist"
-              className="cursor-pointer mt-4 font-poppins font-semibold rounded-full bg-[#E96029] px-6 py-4 text-sm text-white shadow-md transition duration-300 ease-in-out hover:bg-transparent hover:text-[#E96029] hover:border hover:border-[#E96029]"
+              className="cursor-pointer mt-4 font-primary font-semibold rounded-full bg-brand px-6 py-4 text-sm text-white shadow-md transition duration-300 ease-in-out hover:bg-transparent hover:text-brand hover:border hover:border-brand"
             />
           </motion.div>
         </div>

@@ -22,7 +22,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#1C1410] pt-16 pb-8">
+    <footer className="bg-bg-dark pt-16 pb-8">
       <div className="w-full px-6 md:px-[120px]">
         {/* Main Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_0.8fr_0.8fr_0.8fr] gap-10 md:gap-8">
@@ -37,20 +37,20 @@ const Footer = () => {
                 className="h-14 w-auto object-contain"
               />
             </Link>
-            <p className="text-[#9A9A9A] text-sm font-inter leading-[28px] ">
+            <p className="text-text-muted text-sm font-secondary leading-[28px]">
               Launching soon in Enugu. Discover food you never knew existed near you.
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-white font-poppins font-semibold text-base">Quick Links</h3>
+            <h3 className="text-white font-primary font-semibold text-base">Quick Links</h3>
             <ul className="space-y-3">
               {quickLinks.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-[#9A9A9A] hover:text-white transition duration-300 font-inter text-sm"
+                    className="text-text-muted hover:text-white transition duration-300 font-secondary text-sm"
                   >
                     {item.name}
                   </Link>
@@ -61,13 +61,13 @@ const Footer = () => {
 
           {/* Support */}
           <div className="space-y-4">
-            <h3 className="text-white font-poppins font-semibold text-base">Support</h3>
+            <h3 className="text-white font-primary font-semibold text-base">Support</h3>
             <ul className="space-y-3">
               {support.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-[#9A9A9A] hover:text-white transition duration-300 font-inter text-sm"
+                    className="text-text-muted hover:text-white transition duration-300 font-secondary text-sm"
                   >
                     {item.name}
                   </Link>
@@ -78,7 +78,7 @@ const Footer = () => {
 
           {/* Stay Connected */}
           <div className="space-y-4">
-            <h3 className="text-white font-poppins font-semibold text-base">Stay Connected</h3>
+            <h3 className="text-white font-primary font-semibold text-base">Stay Connected</h3>
             <ul className="space-y-3">
               {social.map((item) => (
                 <li key={item.name}>
@@ -86,7 +86,7 @@ const Footer = () => {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#9A9A9A] hover:text-white transition duration-300 font-inter text-sm"
+                    className="text-text-muted hover:text-white transition duration-300 font-secondary text-sm"
                   >
                     {item.name}
                   </Link>
@@ -98,8 +98,8 @@ const Footer = () => {
       </div>
 
       {/* Copyright Bar - Full Width */}
-      <div className="mt-16 pt-6 border-t border-[#3A3028] px-6 md:px-[120px]">
-        <p className="text-[#9A9A9A] text-center font-inter text-sm">
+      <div className="mt-16 pt-6 border-t border-white/10 px-6 md:px-[120px]">
+        <p className="text-text-muted text-center font-secondary text-sm">
           © CraveIt Technologies Limited. All rights reserved.
         </p>
       </div>

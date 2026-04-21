@@ -13,13 +13,17 @@ interface FAQItemProps {
 
 const VendorFAQItem = ({ question, answer, isOpen, onToggle }: FAQItemProps) => {
   return (
-    <div className="border border-[#E5E5E5] rounded-xl bg-white overflow-hidden">
+    <div className="border border-gray-200 rounded-xl bg-white overflow-hidden">
       <button
         className="flex w-full cursor-pointer items-center justify-between text-left px-5 py-4 focus:outline-none"
         onClick={onToggle}
       >
-        <span className="pr-4 text-sm font-medium font-poppins text-[#1C1C1C]">{question}</span>
-        <span className="text-[#1C1C1C] text-lg font-light shrink-0">{isOpen ? "−" : "+"}</span>
+        <span className="pr-4 text-sm font-medium font-primary text-text-primary">
+          {question}
+        </span>
+        <span className="text-text-primary text-lg font-light shrink-0">
+          {isOpen ? "−" : "+"}
+        </span>
       </button>
 
       <AnimatePresence initial={false}>
@@ -31,7 +35,7 @@ const VendorFAQItem = ({ question, answer, isOpen, onToggle }: FAQItemProps) => 
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
           >
-            <p className="px-5 pb-4 text-sm font-inter text-[#6A6A6A] leading-relaxed">
+            <p className="px-5 pb-4 text-sm font-secondary text-text-secondary leading-relaxed">
               {answer}
             </p>
           </motion.div>
@@ -83,14 +87,14 @@ export default function VendorFAQSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h2 className="font-poppins font-normal text-[32px] leading-[40px] md:text-[48px] md:leading-[56px] text-[#1C1C1C]">
+            <h2 className="font-primary font-normal text-[32px] leading-[40px] md:text-[48px] md:leading-[56px] text-text-primary">
               Questions
               <br />
               vendors ask us
               <br />
               most
             </h2>
-            <p className="font-inter text-sm md:text-base text-[#6A6A6A] max-w-xs">
+            <p className="font-secondary text-sm md:text-base text-text-secondary max-w-xs">
               Everything you need to know about being a vendor on CraveIt
             </p>
 

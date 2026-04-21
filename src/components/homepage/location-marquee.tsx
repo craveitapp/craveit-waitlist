@@ -17,7 +17,7 @@ const locations = [
 
 export default function LocationMarquee() {
   return (
-    <section className="w-full bg-[#E96029] py-4 overflow-hidden">
+    <section className="w-full bg-brand py-4 overflow-hidden">
       <div className="relative flex">
         <motion.div
           className="flex shrink-0 items-center gap-8"

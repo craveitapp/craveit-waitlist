@@ -37,10 +37,12 @@ function Section({
 }) {
   return (
     <motion.div variants={fadeInUp} className="mb-10">
-      <h2 className="mb-4 font-poppins text-lg font-semibold text-[#1C1C1C]">
+      <h2 className="mb-4 font-primary text-lg font-semibold text-text-primary">
         {number}. {title}
       </h2>
-      <div className="font-inter text-sm leading-relaxed text-[#444] space-y-3">{children}</div>
+      <div className="font-secondary text-sm leading-relaxed text-text-secondary space-y-3">
+        {children}
+      </div>
     </motion.div>
   );
 }
@@ -50,31 +52,21 @@ export default function PrivacyPolicySection() {
   return (
     <>
       {/* ================= HEADER SECTION ================= */}
-      <section className="w-full bg-[#F8EEE0] px-6 pt-28 pb-16 md:px-8 md:pt-32 md:pb-20">
+      <section className="w-full bg-brand-light px-6 pt-28 pb-16 md:px-8 md:pt-32 md:pb-20">
         <motion.div
           className=" md:px-[120px] "
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          <motion.div variants={fadeInUp} className="mb-6">
-            <Image
-              src="/images/logo.svg"
-              alt="CraveIt"
-              width={32}
-              height={32}
-              className="w-8 h-8"
-            />
-          </motion.div>
-
           <motion.h1
             variants={fadeInUp}
-            className="font-poppins text-3xl font-semibold text-[#1C1C1C] md:text-4xl"
+            className="font-primary text-3xl font-semibold text-text-primary md:text-4xl"
           >
             Privacy Policy
           </motion.h1>
 
-          <motion.p variants={fadeInUp} className="mt-2 font-inter text-xs text-[#9A9A9A]">
+          <motion.p variants={fadeInUp} className="mt-2 font-secondary text-xs text-text-muted">
             Last updated: March 30, 2026
           </motion.p>
         </motion.div>
@@ -92,7 +84,7 @@ export default function PrivacyPolicySection() {
           {/* Intro */}
           <motion.div
             variants={fadeInUp}
-            className="mb-10 font-inter text-sm leading-relaxed text-[#444] space-y-4"
+            className="mb-10 font-secondary text-sm leading-relaxed text-text-secondary space-y-4"
           >
             <p>
               At CraveIt we believe in being straightforward. This policy explains what personal
@@ -103,7 +95,7 @@ export default function PrivacyPolicySection() {
               We comply with the Nigeria Data Protection Act 2023 and its General Application
               and Implementation Directive 2025. If you have any questions about this policy or
               how we handle your data contact us at{" "}
-              <a href="mailto:privacy@getcraveit.com" className="text-[#E96029]">
+              <a href="mailto:privacy@getcraveit.com" className="text-brand">
                 privacy@getcraveit.com
               </a>
               .
@@ -130,7 +122,7 @@ export default function PrivacyPolicySection() {
           </Section>
 
           <Section number="2" title="Information We Collect">
-            <h3 className="font-semibold text-[#1C1C1C] mt-4">
+            <h3 className="font-semibold text-text-primary mt-4">
               Information you give us directly
             </h3>
             <p>When you create an account or use CraveIt you provide us with:</p>
@@ -142,7 +134,7 @@ export default function PrivacyPolicySection() {
               <li>Your bank account details if you are a vendor receiving payouts</li>
             </ul>
 
-            <h3 className="font-semibold text-[#1C1C1C] mt-4">
+            <h3 className="font-semibold text-text-primary mt-4">
               Information we collect automatically
             </h3>
             <p>When you use the CraveIt app we automatically collect:</p>
@@ -160,7 +152,7 @@ export default function PrivacyPolicySection() {
               <li>Technical logs including errors and crash reports</li>
             </ul>
 
-            <h3 className="font-semibold text-[#1C1C1C] mt-4">
+            <h3 className="font-semibold text-text-primary mt-4">
               Information from third parties
             </h3>
             <p>
@@ -173,7 +165,7 @@ export default function PrivacyPolicySection() {
           <Section number="3" title="Why We Collect Your Information">
             <p>We use your information to:</p>
 
-            <h3 className="font-semibold text-[#1C1C1C] mt-4">Provide the service</h3>
+            <h3 className="font-semibold text-text-primary mt-4">Provide the service</h3>
             <ul className="list-disc pl-5 space-y-1">
               <li>Process your orders and facilitate delivery to your address</li>
               <li>Send you order confirmations and delivery updates</li>
@@ -181,28 +173,28 @@ export default function PrivacyPolicySection() {
               <li>Show you food vendors in your delivery location</li>
             </ul>
 
-            <h3 className="font-semibold text-[#1C1C1C] mt-4">Improve the platform</h3>
+            <h3 className="font-semibold text-text-primary mt-4">Improve the platform</h3>
             <ul className="list-disc pl-5 space-y-1">
               <li>Understand which videos perform well and which do not</li>
               <li>Fix technical problems and crashes</li>
               <li>Improve feed personalisation so you see food relevant to you</li>
             </ul>
 
-            <h3 className="font-semibold text-[#1C1C1C] mt-4">Communicate with you</h3>
+            <h3 className="font-semibold text-text-primary mt-4">Communicate with you</h3>
             <ul className="list-disc pl-5 space-y-1">
               <li>Send order updates, receipts, and delivery notifications</li>
               <li>Respond to your support requests</li>
               <li>Notify you of changes to our terms or this policy</li>
             </ul>
 
-            <h3 className="font-semibold text-[#1C1C1C] mt-4">Keep the platform safe</h3>
+            <h3 className="font-semibold text-text-primary mt-4">Keep the platform safe</h3>
             <ul className="list-disc pl-5 space-y-1">
               <li>Detect and prevent fraudulent orders or refund abuse</li>
               <li>Investigate complaints from customers or vendors</li>
               <li>Protect CraveIt, our vendors, and our customers from harm</li>
             </ul>
 
-            <h3 className="font-semibold text-[#1C1C1C] mt-4">Meet our legal obligations</h3>
+            <h3 className="font-semibold text-text-primary mt-4">Meet our legal obligations</h3>
             <ul className="list-disc pl-5 space-y-1">
               <li>
                 Comply with the Nigeria Data Protection Act 2023 and other applicable Nigerian
@@ -260,39 +252,39 @@ export default function PrivacyPolicySection() {
               We share your information only in the following circumstances:
             </p>
 
-            <h3 className="font-semibold text-[#1C1C1C] mt-4">Logistics partners</h3>
+            <h3 className="font-semibold text-text-primary mt-4">Logistics partners</h3>
             <p>
               We share your name, phone number, and delivery address with our delivery partners
               solely to complete your order. They are not permitted to use your information for
               any other purpose.
             </p>
 
-            <h3 className="font-semibold text-[#1C1C1C] mt-4">Vendors</h3>
+            <h3 className="font-semibold text-text-primary mt-4">Vendors</h3>
             <p>
               Vendors see your first name and the details of your order. They do not see your
               full address, payment information, or phone number.
             </p>
 
-            <h3 className="font-semibold text-[#1C1C1C] mt-4">Payment partners</h3>
+            <h3 className="font-semibold text-text-primary mt-4">Payment partners</h3>
             <p>
               Our payment partners process your payments. Their handling of your payment data is
               governed by their own privacy policies.
             </p>
 
-            <h3 className="font-semibold text-[#1C1C1C] mt-4">Service providers</h3>
+            <h3 className="font-semibold text-text-primary mt-4">Service providers</h3>
             <p>
               We use third-party services to help operate CraveIt including cloud hosting and
               customer support tools. These providers only access your data to perform specific
               tasks on our behalf and are bound by confidentiality obligations.
             </p>
 
-            <h3 className="font-semibold text-[#1C1C1C] mt-4">Legal requirements</h3>
+            <h3 className="font-semibold text-text-primary mt-4">Legal requirements</h3>
             <p>
               We may disclose your information where required to do so by Nigerian law, court
               order, or a lawful request from a regulatory or law enforcement authority.
             </p>
 
-            <h3 className="font-semibold text-[#1C1C1C] mt-4">Business transfers</h3>
+            <h3 className="font-semibold text-text-primary mt-4">Business transfers</h3>
             <p>
               If CraveIt merges with or is acquired by another company your information may be
               transferred as part of that process. We will notify you before that happens.
@@ -348,7 +340,7 @@ export default function PrivacyPolicySection() {
               CraveIt is not intended for anyone under the age of 18. We do not knowingly
               collect personal information from children. If you believe a child has provided us
               with personal information contact us at{" "}
-              <a href="mailto:privacy@getcraveit.com" className="text-[#E96029]">
+              <a href="mailto:privacy@getcraveit.com" className="text-brand">
                 privacy@getcraveit.com
               </a>{" "}
               and we will delete it promptly.
@@ -379,12 +371,12 @@ export default function PrivacyPolicySection() {
             <p>
               For any questions about this privacy policy or how we handle your personal
               information contact us at{" "}
-              <a href="mailto:privacy@getcraveit.com" className="text-[#E96029]">
+              <a href="mailto:privacy@getcraveit.com" className="text-brand">
                 privacy@getcraveit.com
               </a>
               .
             </p>
-            <p className="mt-4 text-[#6A6A6A]">
+            <p className="mt-4 text-text-secondary">
               This Privacy Policy was last updated on March 30, 2026. By using CraveIt you
               confirm that you have read and understood how we collect and use your personal
               information.
