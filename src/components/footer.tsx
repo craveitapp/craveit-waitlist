@@ -23,7 +23,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-bg-dark pt-16 pb-8">
-      <div className="w-full px-6 md:px-[120px]">
+      <div className="w-full px-6 md:px-10 lg:px-14 xl:max-w-7xl xl:mx-auto">
         {/* Main Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_0.8fr_0.8fr_0.8fr] gap-10 md:gap-8">
           {/* Brand Column */}
@@ -98,7 +98,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright Bar - Full Width */}
-      <div className="mt-16 pt-6 border-t border-white/10 px-6 md:px-[120px]">
+      <div className="mt-16 pt-6 border-t border-white/10 px-6 md:px-10 lg:px-14 xl:max-w-7xl xl:mx-auto">
         <p className="text-text-muted text-center font-secondary text-sm">
           © CraveIt Technologies Limited. All rights reserved.
         </p>

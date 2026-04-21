@@ -76,56 +76,58 @@ export default function VendorFAQSection() {
   };
 
   return (
-    <section className="bg-white px-6 md:px-[120px] py-16 md:py-24">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
-          {/* Left: Title and Illustration */}
-          <motion.div
-            className="space-y-6"
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
-            <h2 className="font-primary font-normal text-[32px] leading-[40px] md:text-[48px] md:leading-[56px] text-text-primary">
-              Questions
-              <br />
-              vendors ask us
-              <br />
-              most
-            </h2>
-            <p className="font-secondary text-sm md:text-base text-text-secondary max-w-xs">
-              Everything you need to know about being a vendor on CraveIt
-            </p>
+    <section className="bg-white py-16 md:py-24">
+      <div className="px-6 md:px-10 lg:px-14 xl:max-w-7xl xl:mx-auto">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+            {/* Left: Title and Illustration */}
+            <motion.div
+              className="space-y-6"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              <h2 className="font-primary font-normal text-[32px] leading-[40px] md:text-[48px] md:leading-[56px] text-text-primary">
+                Questions
+                <br />
+                vendors ask us
+                <br />
+                most
+              </h2>
+              <p className="font-secondary text-sm md:text-base text-text-secondary max-w-xs">
+                Everything you need to know about being a vendor on CraveIt
+              </p>
 
-            <div className="relative w-full max-w-[280px] aspect-[4/3]">
-              <Image
-                src="/images/faq-illust.png"
-                alt="FAQ illustration with chat bubbles"
-                fill
-                className="object-contain"
-              />
-            </div>
-          </motion.div>
+              <div className="relative w-full max-w-[280px] aspect-[4/3]">
+                <Image
+                  src="/images/faq-illust.png"
+                  alt="FAQ illustration with chat bubbles"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </motion.div>
 
-          {/* Right: FAQ Accordion */}
-          <motion.div
-            className="space-y-3"
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          >
-            {faqs.map((faq, index) => (
-              <VendorFAQItem
-                key={index}
-                question={faq.question}
-                answer={faq.answer}
-                isOpen={openIndex === index}
-                onToggle={() => handleToggle(index)}
-              />
-            ))}
-          </motion.div>
+            {/* Right: FAQ Accordion */}
+            <motion.div
+              className="space-y-3"
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            >
+              {faqs.map((faq, index) => (
+                <VendorFAQItem
+                  key={index}
+                  question={faq.question}
+                  answer={faq.answer}
+                  isOpen={openIndex === index}
+                  onToggle={() => handleToggle(index)}
+                />
+              ))}
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>

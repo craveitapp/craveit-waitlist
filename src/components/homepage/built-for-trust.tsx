@@ -41,53 +41,55 @@ export default function BuiltForTrust() {
   };
 
   return (
-    <section className="bg-bg-secondary px-6 md:px-[120px] py-16 md:py-24">
-      {/* Section Header */}
-      <motion.div
-        className="mb-12 text-center"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, ease: easeOut }}
-        variants={{
-          hidden: { opacity: 0, y: 20 },
-          visible: { opacity: 1, y: 0 },
-        }}
-      >
-        <h2 className="font-primary font-bold text-[28px] leading-[36px] md:text-[40px] md:leading-[52px] text-text-primary">
-          Built for trust from kitchen
-          <br />
-          to your door.
-        </h2>
-      </motion.div>
+    <section className="bg-bg-secondary py-16 md:py-24">
+      <div className="px-6 md:px-10 lg:px-14 xl:max-w-7xl xl:mx-auto">
+        {/* Section Header */}
+        <motion.div
+          className="mb-12 text-center"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: easeOut }}
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          <h2 className="font-primary font-bold text-[28px] leading-[36px] md:text-[40px] md:leading-[52px] text-text-primary">
+            Built for trust from kitchen
+            <br />
+            to your door.
+          </h2>
+        </motion.div>
 
-      {/* Cards Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 w-full">
-        {trustCards.map((card, index) => (
-          <motion.div
-            key={index}
-            custom={index}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            variants={fadeUp}
-            className="rounded-2xl overflow-hidden bg-white shadow-sm"
-          >
-            {/* Illustration Area */}
-            <div className={`relative h-48 md:h-56 w-full ${card.bgColor}`}>
-              <Image src={card.image} alt={card.alt} fill className="object-cover" />
-            </div>
-            {/* Content */}
-            <div className="p-5 md:p-6">
-              <h3 className="font-primary font-semibold text-base md:text-lg text-text-primary mb-2">
-                {card.title}
-              </h3>
-              <p className="font-secondary text-sm text-text-secondary leading-relaxed">
-                {card.description}
-              </p>
-            </div>
-          </motion.div>
-        ))}
+        {/* Cards Section */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 w-full">
+          {trustCards.map((card, index) => (
+            <motion.div
+              key={index}
+              custom={index}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={fadeUp}
+              className="rounded-2xl overflow-hidden bg-white shadow-sm"
+            >
+              {/* Illustration Area */}
+              <div className={`relative h-48 md:h-56 w-full ${card.bgColor}`}>
+                <Image src={card.image} alt={card.alt} fill className="object-cover" />
+              </div>
+              {/* Content */}
+              <div className="p-5 md:p-6">
+                <h3 className="font-primary font-semibold text-base md:text-lg text-text-primary mb-2">
+                  {card.title}
+                </h3>
+                <p className="font-secondary text-sm text-text-secondary leading-relaxed">
+                  {card.description}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );

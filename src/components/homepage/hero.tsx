@@ -46,9 +46,9 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative w-full min-h-screen overflow-hidden bg-bg-cream px-6 pt-28 pb-12 md:px-[120px] md:pt-36 md:pb-0"
+      className="relative w-full min-h-screen overflow-hidden bg-bg-cream pt-28 md:pt-36 md:pb-0"
     >
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-12 md:flex-row md:items-center md:py-20 md:justify-between md:min-h-[calc(100vh-5rem)]">
+      <div className="px-6 md:px-10 lg:px-14 xl:max-w-7xl xl:mx-auto flex flex-col items-center gap-12 md:flex-row md:items-center md:py-20 md:justify-between md:min-h-[calc(100vh-5rem)]">
         {/* ── Left: Text Content ── */}
         <motion.div
           className="flex flex-col items-start text-left max-w-lg"

@@ -39,7 +39,7 @@
 //   return (
 //     <>
 //       {isDesktop ? (
-//         <nav className="fixed top-0 z-50 py-5 w-full bg-white px-[120px] text-[#1C1C1C] shadow-sm">
+//         <nav className="fixed top-0 z-50 py-5 w-full bg-white container-padding text-[#1C1C1C] shadow-sm">
 //           <div className="mx-auto flex items-center justify-between">
 //             {/* Logo Section */}
 //             <div className="block">
@@ -88,15 +88,19 @@ export default function Navbar() {
   return (
     <>
       {isDesktop ? (
-        <nav className=" top-0 z-50 py-5 w-full bg-brand-light px-[120px] text-text-primary">
-          <div className="mx-auto flex items-center justify-center">
-            <Logo width={170} height={40} />
+        <nav className=" top-0 z-50 py-5 w-full bg-brand-light text-text-primary">
+          <div className="px-6 md:px-10 lg:px-14 xl:max-w-7xl xl:mx-auto">
+            <div className="flex items-center justify-center">
+              <Logo width={170} height={40} />
+            </div>
           </div>
         </nav>
       ) : (
-        <nav className=" top-0 z-50 py-5 w-full bg-brand-light px-[120px] text-text-primary">
-          <div className="mx-auto flex items-center justify-center">
-            <Logo width={170} height={40} />
+        <nav className=" top-0 z-50 py-5 w-full bg-brand-light text-text-primary">
+          <div className="px-6 md:px-10 lg:px-14 xl:max-w-7xl xl:mx-auto">
+            <div className="flex items-center justify-center">
+              <Logo width={170} height={40} />
+            </div>
           </div>
         </nav>
       )}

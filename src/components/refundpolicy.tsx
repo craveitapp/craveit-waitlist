@@ -44,7 +44,7 @@ export default function RefundPolicySection() {
       {/* ================= HEADER SECTION ================= */}
       <section className="w-full bg-brand-light px-6 pt-28 pb-16 md:px-8 md:pt-32 md:pb-20">
         <motion.div
-          className="md:px-[120px]"
+          className="px-6 md:px-10 lg:px-14 xl:max-w-7xl xl:mx-auto"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -65,7 +65,7 @@ export default function RefundPolicySection() {
       {/* ================= CONTENT SECTION ================= */}
       <section className="w-full bg-white px-6 py-12 md:px-8 md:py-16">
         <motion.div
-          className="md:px-[120px]"
+          className="px-6 md:px-10 lg:px-14 xl:max-w-7xl xl:mx-auto"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
