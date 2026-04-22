@@ -90,10 +90,8 @@ export default function VendorFAQSection() {
             >
               <h2 className="font-primary font-normal text-[32px] leading-10 md:text-[50px] md:leading-[52px] text-text-primary">
                 Questions
-                <br />
-                vendors ask us
-                <br />
-                most
+                <br className="hidden md:inline" /> vendors ask us
+                <br className="hidden md:inline" /> most
               </h2>
               <p className="font-secondary text-sm md:text-2xl md:leading-9 text-text-secondary max-w-xs">
                 Everything you need to know about being a vendor on CraveIt

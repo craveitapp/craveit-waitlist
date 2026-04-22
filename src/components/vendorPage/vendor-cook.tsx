@@ -56,8 +56,8 @@ export default function VendorCook() {
         >
           <h2 className="font-primary font-semibold text-[28px] leading-9 md:text-[48px] md:leading-[73px] text-text-primary">
             Built for vendors who
-            <br />
-            actually <span className="text-brand italic">cook.</span>
+            <br className="hidden md:inline" /> actually{" "}
+            <span className="text-brand italic">cook.</span>
           </h2>
         </motion.div>
 

@@ -20,8 +20,7 @@ export default function Experience() {
             >
               <h2 className="font-primary font-semibold text-[32px] leading-10 md:text-[50px] md:leading-[73px] text-text-primary">
                 Your next meal is
-                <br />
-                almost here.
+                <br className="hidden md:inline" /> almost here.
               </h2>
 
               <p className="font-secondary text-sm md:text-2xl md:leading-[39px] text-text-secondary md:max-w-lg max-w-md leading-relaxed">

@@ -57,8 +57,7 @@ export default function BuiltForTrust() {
         >
           <h2 className="font-primary font-bold text-[28px] leading-9 md:text-[50px] md:leading-[80px] text-text-primary">
             Built for trust from kitchen
-            <br />
-            to your door.
+            <br className="hidden md:inline" /> to your door.
           </h2>
         </motion.div>
 

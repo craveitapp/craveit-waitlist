@@ -25,10 +25,8 @@ export default function DiscoverFood() {
               </span>
               <h2 className="font-primary font-semibold text-[32px] leading-[42px] md:text-[50px] md:leading-[73px] text-text-primary">
                 Discover food you
-                <br />
-                never knew existed
-                <br />
-                near you.
+                <br className="hidden md:inline" /> never knew existed
+                <br className="hidden md:inline" /> near you.
               </h2>
               <p className="font-secondary text-sm md:text-lg md:leading-[35px] text-text-secondary leading-relaxed md:max-w-xl max-w-md">
                 The best food near you has been hiding. CraveIt is launching soon and we are

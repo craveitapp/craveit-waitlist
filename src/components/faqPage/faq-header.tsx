@@ -15,9 +15,9 @@ export default function FAQHeader() {
           >
             <h1 className="font-primary font-semibold text-[36px] leading-11 md:text-[72px] md:leading-[77px] text-text-primary">
               Got questions?
-              <br />
+              <br className="hidden md:inline" />
               We've
-              <br />
+              <br className="hidden md:inline" />
               got answers.
             </h1>
 

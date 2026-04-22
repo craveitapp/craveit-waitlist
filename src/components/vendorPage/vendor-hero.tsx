@@ -19,10 +19,9 @@ export default function VendorHero() {
             >
               <h1 className="font-primary font-semibold text-[36px] leading-11 md:text-[72px] md:leading-[77px] text-text-primary">
                 Your food.
-                <br />
-                Your <span className="text-brand italic">story</span>.
-                <br />
-                Your income.
+                <br className="hidden md:inline" /> Your{" "}
+                <span className="text-brand italic">story</span>.
+                <br className="hidden md:inline" /> Your income.
               </h1>
 
               <p className="font-secondary text-sm md:text-lg md:leading-7 text-text-secondary  leading-relaxed">

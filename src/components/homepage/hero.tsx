@@ -60,11 +60,11 @@ export default function HeroSection() {
             variants={fadeInUp}
             className="font-primary font-semibold text-[36px] leading-11 tracking-tight text-text-primary md:text-[72px] md:leading-[77px] mb-5"
           >
-            Food you <span className="text-brand italic">see</span>
-            <br />
+            Food you <span className="text-brand italic"> see </span>
+            <br className="hidden md:inline" />
             before you
-            <br />
-            <span className="text-brand italic">order.</span>
+            <br className="hidden md:inline" />
+            <span className="text-brand italic"> order.</span>
           </motion.h1>
 
           <motion.p

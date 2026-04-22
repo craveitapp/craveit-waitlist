@@ -55,9 +55,8 @@ export default function ScrollToBite() {
           }}
         >
           <h2 className="font-primary font-bold text-[28px] leading-[36px] md:text-[50px] md:leading-[73px] text-text-primary">
-            From <span className="text-brand italic">scroll</span> to doorstep
-            <br />
-            in three steps.
+            From <span className="text-brand italic"> scroll</span> to doorstep
+            <br className="hidden md:inline" /> in three steps.
           </h2>
         </motion.div>
 

@@ -90,8 +90,7 @@ export default function FAQSection() {
             >
               <h2 className="font-primary font-normal text-[32px] leading-10 md:text-[50px] md:leading-[52px] text-text-primary">
                 We've got
-                <br />
-                answers.
+                <br className="hidden md:inline" /> answers.
               </h2>
               <p className="font-secondary text-sm md:text-2xl md:leading-9 text-text-secondary md:max-w-md max-w-xs">
                 Everything you need to know about ordering on CraveIt.

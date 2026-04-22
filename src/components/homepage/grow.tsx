@@ -56,10 +56,8 @@ export default function Grow() {
 
               <h2 className="font-primary font-semibold text-[28px] leading-[38px] md:text-[40px] md:leading-20 text-text-primary">
                 Grow your business where
-                <br />
-                customers are
-                <br />
-                already searching.
+                <br className="hidden md:inline" /> customers are
+                <br className="hidden md:inline" /> already searching.
               </h2>
 
               <p className="font-secondary text-sm md:text-xl text-text-secondary leading-relaxed">
