@@ -29,8 +29,10 @@ const fadeInUp = {
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <motion.div variants={fadeInUp} className="mb-10">
-      <h2 className="mb-4 font-primary text-lg font-semibold text-text-primary">{title}</h2>
-      <div className="font-secondary text-sm leading-relaxed text-text-secondary space-y-3">
+      <h2 className="mb-4 font-primary text-lg md:text-2xl font-semibold text-text-primary">
+        {title}
+      </h2>
+      <div className="font-secondary text-sm md:text-lg leading-relaxed text-text-secondary space-y-3">
         {children}
       </div>
     </motion.div>
@@ -42,7 +44,7 @@ export default function RefundPolicySection() {
   return (
     <>
       {/* ================= HEADER SECTION ================= */}
-      <section className="w-full bg-brand-light px-6 pt-28 pb-16 md:px-8 md:pt-32 md:pb-20">
+      <section className="w-full bg-brand-light pt-28 pb-16 md:px-8 md:pt-32 md:pb-20">
         <motion.div
           className="px-6 md:px-10 lg:px-14 xl:max-w-7xl xl:mx-auto"
           variants={containerVariants}
@@ -51,19 +53,22 @@ export default function RefundPolicySection() {
         >
           <motion.h1
             variants={fadeInUp}
-            className="font-primary text-3xl font-semibold text-text-primary md:text-4xl"
+            className="font-primary text-3xl font-semibold text-text-primary md:text-[72px] md:leading-[77px]"
           >
             Refund Policy
           </motion.h1>
 
-          <motion.p variants={fadeInUp} className="mt-2 font-secondary text-xs text-text-muted">
+          <motion.p
+            variants={fadeInUp}
+            className="mt-2 font-secondary text-xs md:text-lg text-text-secondary"
+          >
             Last updated: March 30, 2026
           </motion.p>
         </motion.div>
       </section>
 
       {/* ================= CONTENT SECTION ================= */}
-      <section className="w-full bg-white px-6 py-12 md:px-8 md:py-16">
+      <section className="w-full bg-white py-12 md:px-8 md:py-16">
         <motion.div
           className="px-6 md:px-10 lg:px-14 xl:max-w-7xl xl:mx-auto"
           variants={containerVariants}
@@ -74,7 +79,7 @@ export default function RefundPolicySection() {
           {/* Intro */}
           <motion.div
             variants={fadeInUp}
-            className="mb-10 font-secondary text-sm leading-relaxed text-text-secondary"
+            className="mb-10 font-secondary text-sm md:text-lg leading-relaxed text-text-secondary"
           >
             <p>
               We want every CraveIt order to be exactly what you expected. When something goes
@@ -191,7 +196,7 @@ export default function RefundPolicySection() {
           </Section>
 
           <motion.div variants={fadeInUp} className="mt-12 pt-8 border-t border-gray-200">
-            <p className="font-secondary text-xs text-text-muted">
+            <p className="font-secondary text-xs md:text-lg text-text-muted">
               CraveIt Technologies Limited · getcraveit.com · Last updated: March 30, 2026
             </p>
           </motion.div>

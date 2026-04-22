@@ -7,15 +7,15 @@
   --color-brand-light: #F8EEE0;
 
   /* Text Colors */
-  --color-text-primary: #1C1C1C;
-  --color-text-secondary: #6A6A6A;
-  --color-text-muted: #9A9A9A;
+  --color-text-primary: #131927;
+  --color-text-secondary: #6D717F;
+  --color-text-muted: #CCCCCC;
 
   /* Background Colors */
   --color-bg-primary: #FFFFFF;
   --color-bg-secondary: #FAF7F2;
   --color-bg-cream: #F8EEE0;
-  --color-bg-dark: #1C1410;
+  --color-bg-dark: #1C1208;
 
   /* Semantic Aliases for easy usage */
   --color-primary: var(--color-brand);

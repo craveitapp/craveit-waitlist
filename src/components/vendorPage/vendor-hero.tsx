@@ -17,7 +17,7 @@ export default function VendorHero() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: easeOut }}
             >
-              <h1 className="font-primary font-normal text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] text-text-primary">
+              <h1 className="font-primary font-semibold text-[36px] leading-11 md:text-[72px] md:leading-[77px] text-text-primary">
                 Your food.
                 <br />
                 Your <span className="text-brand italic">story</span>.
@@ -25,7 +25,7 @@ export default function VendorHero() {
                 Your income.
               </h1>
 
-              <p className="font-secondary text-sm md:text-base text-text-secondary max-w-md leading-relaxed">
+              <p className="font-secondary text-sm md:text-lg md:leading-7 text-text-secondary  leading-relaxed">
                 CraveIt gives vendors near you a video-first storefront that turns hungry
                 scrollers into paying customers.
               </p>
@@ -33,7 +33,7 @@ export default function VendorHero() {
               <TallyButton
                 formId="wdL4vy"
                 label="Join The Waitlist"
-                className="cursor-pointer font-primary font-semibold rounded-full bg-brand px-6 py-4 text-sm text-white shadow-md transition duration-300 ease-in-out hover:bg-transparent hover:text-brand hover:border hover:border-brand"
+                className="cursor-pointer font-primary font-semibold rounded-full bg-brand p-6 md:px-5 md:py-7 md:text-base text-sm text-white shadow-md transition duration-300 ease-in-out hover:bg-transparent hover:text-brand hover:border hover:border-brand"
               />
             </motion.div>
 
@@ -44,7 +44,7 @@ export default function VendorHero() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: easeOut, delay: 0.2 }}
             >
-              <div className="relative w-full aspect-[4/3] max-w-[500px] mx-auto">
+              <div className="relative w-full aspect-4/3 max-w-[500px] md:max-w-[600px] mx-auto">
                 <Image
                   src="/images/hero-vendor-illust.png"
                   alt="Vendor cooking food illustration"

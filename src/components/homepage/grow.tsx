@@ -15,7 +15,7 @@ export default function Grow() {
     <section className="bg-bg-secondary py-16 md:py-24">
       <div className="px-6 md:px-10 lg:px-14 xl:max-w-7xl xl:mx-auto">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-30 items-center">
             {/* Left: Illustration */}
             <motion.div
               initial="hidden"
@@ -50,11 +50,11 @@ export default function Grow() {
                 },
               }}
             >
-              <span className="font-secondary text-xs tracking-[0.15em] text-text-secondary uppercase">
+              <span className="font-secondary text-xs md:text-xl tracking-[0.15em] text-text-secondary uppercase">
                 For Vendors
               </span>
 
-              <h2 className="font-primary font-normal text-[28px] leading-[38px] md:text-[40px] md:leading-[80px] text-text-primary">
+              <h2 className="font-primary font-semibold text-[28px] leading-[38px] md:text-[40px] md:leading-20 text-text-primary">
                 Grow your business where
                 <br />
                 customers are
@@ -62,7 +62,7 @@ export default function Grow() {
                 already searching.
               </h2>
 
-              <p className="font-secondary text-sm md:text-base text-text-secondary leading-relaxed">
+              <p className="font-secondary text-sm md:text-xl text-text-secondary leading-relaxed">
                 CraveIt brings your food directly to hungry customers through video. We help you
                 get set up and go live fast.
               </p>
@@ -86,7 +86,9 @@ export default function Grow() {
                         />
                       </svg>
                     </div>
-                    <p className="font-secondary text-sm text-text-secondary">{text}</p>
+                    <p className="font-secondary text-sm md:text-base text-text-secondary">
+                      {text}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -95,7 +97,7 @@ export default function Grow() {
               <TallyButton
                 formId="wdL4vy"
                 label="Join The Waitlist"
-                className="cursor-pointer mt-4 font-primary font-semibold rounded-full bg-brand px-6 py-4 text-sm text-white shadow-md transition duration-300 ease-in-out hover:bg-transparent hover:text-brand hover:border hover:border-brand"
+                className="cursor-pointer mt-4 font-primary font-semibold rounded-full bg-brand p-6 md:px-5 md:py-7 md:text-base text-sm text-white shadow-md transition duration-300 ease-in-out hover:bg-transparent hover:text-brand hover:border hover:border-brand"
               />
             </motion.div>
           </div>

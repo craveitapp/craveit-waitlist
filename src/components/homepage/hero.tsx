@@ -46,9 +46,9 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative w-full min-h-screen overflow-hidden bg-bg-cream pt-28 md:pt-36 md:pb-0"
+      className="relative w-full min-h-screen overflow-hidden bg-bg-cream py-12 md:py-16"
     >
-      <div className="px-6 md:px-10 lg:px-14 xl:max-w-7xl xl:mx-auto flex flex-col items-center gap-12 md:flex-row md:items-center md:py-20 md:justify-between md:min-h-[calc(100vh-5rem)]">
+      <div className="px-6 md:px-10 lg:px-14 xl:max-w-7xl xl:mx-auto flex flex-col items-center gap-12 md:flex-row md:items-center md:justify-between md:min-h-[calc(100vh-5rem)]">
         {/* ── Left: Text Content ── */}
         <motion.div
           className="flex flex-col items-start text-left max-w-lg"
@@ -58,7 +58,7 @@ export default function HeroSection() {
         >
           <motion.h1
             variants={fadeInUp}
-            className="font-primary font-bold text-[36px] leading-[44px] tracking-tight text-text-primary md:text-[52px] md:leading-[62px] mb-5"
+            className="font-primary font-semibold text-[36px] leading-11 tracking-tight text-text-primary md:text-[72px] md:leading-[77px] mb-5"
           >
             Food you <span className="text-brand italic">see</span>
             <br />
@@ -69,7 +69,7 @@ export default function HeroSection() {
 
           <motion.p
             variants={fadeInUp}
-            className="font-secondary text-sm leading-relaxed text-text-secondary mb-8 md:text-base md:leading-7 max-w-sm"
+            className="font-secondary text-sm leading-relaxed text-text-secondary mb-8 md:text-lg md:leading-7 md:max-w-xl max-w-sm"
           >
             Launching soon in Enugu. Be the first to discover food you never knew existed near
             you.
@@ -80,7 +80,7 @@ export default function HeroSection() {
               <TallyButton
                 formId="wgBvg1"
                 label="Join The Waitlist"
-                className="cursor-pointer font-primary font-semibold rounded-full bg-brand px-6 py-6 text-sm text-white shadow-md transition duration-300 ease-in-out hover:bg-transparent hover:text-brand hover:border hover:border-brand"
+                className="cursor-pointer font-primary font-semibold rounded-full bg-brand p-6 md:px-5 md:py-7 md:text-base text-sm text-white shadow-md transition duration-300 ease-in-out hover:bg-transparent hover:text-brand hover:border hover:border-brand"
               />
             </motion.div>
           </motion.div>
@@ -97,7 +97,7 @@ export default function HeroSection() {
           <div className="relative flex items-center justify-center rounded-[2.5rem] bg-[#EFDCC8] py-6 px-10 shadow-inner md:py-10 md:px-40">
             {/* Phone frame */}
             <div
-              className="relative w-[200px] md:w-[240px] rounded-[2.8rem] overflow-hidden border-[6px] border-text-primary shadow-2xl bg-black"
+              className="relative w-[200px] md:w-[250px] rounded-[2.8rem] overflow-hidden border-[6px] border-text-primary shadow-2xl bg-black"
               style={{ aspectRatio: "9/19.5" }}
             >
               {/* Notch */}
@@ -105,7 +105,7 @@ export default function HeroSection() {
 
               {/* Video — replace src with your actual video path */}
               <video
-                src="/videos/app-demo.mp4"
+                src="/videos/hero-video.MP4"
                 autoPlay
                 muted
                 loop

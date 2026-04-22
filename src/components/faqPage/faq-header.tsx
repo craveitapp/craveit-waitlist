@@ -13,7 +13,7 @@ export default function FAQHeader() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: easeOut }}
           >
-            <h1 className="font-primary font-normal text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] text-text-primary">
+            <h1 className="font-primary font-semibold text-[36px] leading-11 md:text-[72px] md:leading-[77px] text-text-primary">
               Got questions?
               <br />
               We've
@@ -21,7 +21,7 @@ export default function FAQHeader() {
               got answers.
             </h1>
 
-            <p className="font-secondary text-sm md:text-base text-text-secondary mt-6 max-w-md leading-relaxed">
+            <p className="font-secondary text-sm md:text-lg text-text-secondary mt-6  leading-relaxed">
               Everything you need to know about ordering, delivery, payments, and getting the
               most out of CraveIt.
             </p>

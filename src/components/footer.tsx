@@ -25,32 +25,34 @@ const Footer = () => {
     <footer className="bg-bg-dark pt-16 pb-8">
       <div className="w-full px-6 md:px-10 lg:px-14 xl:max-w-7xl xl:mx-auto">
         {/* Main Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_0.8fr_0.8fr_0.8fr] gap-10 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_0.8fr_0.8fr_0.8fr] gap-10 md:gap-12">
           {/* Brand Column */}
-          <div className="space-y-4 lg:pr-8">
+          <div className="space-y-2 lg:pr-8">
             <Link href="/" className="inline-block">
               <Image
                 src="/footer-logo.svg"
                 alt="CraveIt"
-                width={180}
+                width={200}
                 height={52}
-                className="h-14 w-auto object-contain"
+                className="h-14 md:h-16 w-auto object-contain"
               />
             </Link>
-            <p className="text-text-muted text-sm font-secondary leading-[28px]">
+            <p className="text-text-muted text-sm md:text-base font-secondary leading-7">
               Launching soon in Enugu. Discover food you never knew existed near you.
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-white font-primary font-semibold text-base">Quick Links</h3>
+            <h3 className="text-white font-primary font-medium md:text-xl text-base">
+              Quick Links
+            </h3>
             <ul className="space-y-3">
               {quickLinks.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-text-muted hover:text-white transition duration-300 font-secondary text-sm"
+                    className="text-text-muted hover:text-white transition duration-300 font-secondary  md:text-base text-sm"
                   >
                     {item.name}
                   </Link>
@@ -61,13 +63,15 @@ const Footer = () => {
 
           {/* Support */}
           <div className="space-y-4">
-            <h3 className="text-white font-primary font-semibold text-base">Support</h3>
+            <h3 className="text-white font-primary font-medium md:text-xl text-base">
+              Support
+            </h3>
             <ul className="space-y-3">
               {support.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-text-muted hover:text-white transition duration-300 font-secondary text-sm"
+                    className="text-text-muted hover:text-white transition duration-300 font-secondary md:text-base text-sm"
                   >
                     {item.name}
                   </Link>
@@ -78,7 +82,9 @@ const Footer = () => {
 
           {/* Stay Connected */}
           <div className="space-y-4">
-            <h3 className="text-white font-primary font-semibold text-base">Stay Connected</h3>
+            <h3 className="text-white font-primary font-medium md:text-xl text-base">
+              Stay Connected
+            </h3>
             <ul className="space-y-3">
               {social.map((item) => (
                 <li key={item.name}>
@@ -86,7 +92,7 @@ const Footer = () => {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-text-muted hover:text-white transition duration-300 font-secondary text-sm"
+                    className="text-text-muted hover:text-white transition duration-300 font-secondary md:text-base text-sm"
                   >
                     {item.name}
                   </Link>
@@ -99,7 +105,7 @@ const Footer = () => {
 
       {/* Copyright Bar - Full Width */}
       <div className="mt-16 pt-6 border-t border-white/10 px-6 md:px-10 lg:px-14 xl:max-w-7xl xl:mx-auto">
-        <p className="text-text-muted text-center font-secondary text-sm">
+        <p className="text-text-muted text-center md:text-left font-secondary md:text-base text-sm">
           © CraveIt Technologies Limited. All rights reserved.
         </p>
       </div>

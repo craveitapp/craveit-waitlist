@@ -162,10 +162,10 @@ const FAQItemComponent = ({
         className="flex w-full cursor-pointer items-center justify-between text-left px-5 py-4 focus:outline-none"
         onClick={onToggle}
       >
-        <span className="pr-4 text-sm font-medium font-primary text-text-primary">
+        <span className="pr-4 text-sm md:text-lg font-medium font-primary text-text-primary">
           {item.question}
         </span>
-        <span className="text-text-primary text-lg font-light shrink-0">
+        <span className="text-text-primary text-lg md:text-2xl font-light shrink-0">
           {isOpen ? "−" : "+"}
         </span>
       </button>
@@ -179,7 +179,7 @@ const FAQItemComponent = ({
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
           >
-            <p className="px-5 pb-4 text-sm font-secondary text-text-secondary leading-relaxed">
+            <p className="px-5 pb-4 text-sm md:text-base font-secondary text-text-secondary leading-relaxed">
               {item.answer}
             </p>
           </motion.div>
@@ -242,7 +242,7 @@ export default function FAQContent() {
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <h3 className="font-primary font-semibold text-lg text-text-primary mb-4">
+                  <h3 className="font-primary font-semibold text-lg md:text-2xl text-text-primary mb-4">
                     {category.label}
                   </h3>
                   <div className="space-y-3">

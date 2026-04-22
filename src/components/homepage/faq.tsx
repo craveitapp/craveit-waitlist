@@ -18,10 +18,10 @@ const FAQItem = ({ question, answer, isOpen, onToggle }: FAQItemProps) => {
         className="flex w-full cursor-pointer items-center justify-between text-left px-5 py-4 focus:outline-none"
         onClick={onToggle}
       >
-        <span className="pr-4 text-sm font-medium font-primary text-text-primary">
+        <span className="pr-4 text-sm md:text-lg font-medium font-secondary text-text-primary">
           {question}
         </span>
-        <span className="text-text-primary text-lg font-light shrink-0">
+        <span className="text-text-primary text-lg md:text-2xl font-light shrink-0">
           {isOpen ? "−" : "+"}
         </span>
       </button>
@@ -35,7 +35,7 @@ const FAQItem = ({ question, answer, isOpen, onToggle }: FAQItemProps) => {
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
           >
-            <p className="px-5 pb-4 text-sm font-secondary text-text-secondary leading-relaxed">
+            <p className="px-5 pb-4 text-sm md:text-base font-secondary text-text-secondary leading-relaxed">
               {answer}
             </p>
           </motion.div>
@@ -88,16 +88,16 @@ export default function FAQSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <h2 className="font-primary font-normal text-[32px] leading-[40px] md:text-[48px] md:leading-[56px] text-text-primary">
+              <h2 className="font-primary font-normal text-[32px] leading-10 md:text-[50px] md:leading-[52px] text-text-primary">
                 We've got
                 <br />
                 answers.
               </h2>
-              <p className="font-secondary text-sm md:text-base text-text-secondary max-w-xs">
+              <p className="font-secondary text-sm md:text-2xl md:leading-9 text-text-secondary md:max-w-md max-w-xs">
                 Everything you need to know about ordering on CraveIt.
               </p>
 
-              <div className="relative w-full max-w-[280px] aspect-[4/3]">
+              <div className="relative w-full max-w-[420px] aspect-4/3">
                 <Image
                   src="/images/faq-illust.png"
                   alt="FAQ illustration with chat bubbles"

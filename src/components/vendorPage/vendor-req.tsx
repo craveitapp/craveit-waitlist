@@ -38,15 +38,15 @@ export default function VendorReq() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: easeOut }}
             >
-              <span className="font-secondary text-xs tracking-[0.15em] text-text-secondary uppercase">
+              <span className="font-secondary text-xs md:text-xl tracking-[0.15em] text-text-secondary uppercase">
                 Requirements
               </span>
 
-              <h2 className="font-primary font-normal text-[32px] leading-[40px] md:text-[40px] md:leading-[50px] text-text-primary">
+              <h2 className="font-primary font-semibold text-[32px] leading-10 md:text-[48px] md:leading-[73px] text-text-primary">
                 What you need to get started.
               </h2>
 
-              <p className="font-secondary text-sm text-text-secondary">
+              <p className="font-secondary text-sm md:text-base text-text-secondary">
                 We keep it simple. If you cook real food, you're already 90% there.
               </p>
 
@@ -80,7 +80,7 @@ export default function VendorReq() {
                         />
                       </svg>
                     </div>
-                    <p className="font-secondary text-sm text-text-primary">
+                    <p className="font-secondary text-sm md:text-base text-text-primary">
                       <span className="font-semibold">{req.title}</span>{" "}
                       <span className="text-text-secondary">{req.description}</span>
                     </p>

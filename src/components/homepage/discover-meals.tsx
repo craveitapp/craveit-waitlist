@@ -23,7 +23,7 @@ export default function DiscoverMeals() {
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeInUp}
         >
-          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 font-primary font-bold text-[28px] leading-[40px] md:text-[52px] md:leading-[62px] text-text-primary">
+          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 font-primary font-bold text-[28px] leading-10 md:text-[57px] md:leading-[62px] text-text-primary">
             <span>Discover</span>
             <span className="text-[#E96029] italic">meals</span>
             <span>through short</span>
@@ -35,7 +35,7 @@ export default function DiscoverMeals() {
               className="w-14 h-14 md:w-20 md:h-20 object-contain"
             />
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 font-primary font-bold text-[28px] leading-[40px] md:text-[52px] md:leading-[62px] text-text-primary">
+          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 font-primary font-bold text-[28px] leading-10 md:text-[52px] md:leading-[62px] text-text-primary">
             <span>videos</span>
             <Image
               src="/images/discover-illust-2.png"

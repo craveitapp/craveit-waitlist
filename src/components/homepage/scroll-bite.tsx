@@ -54,7 +54,7 @@ export default function ScrollToBite() {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <h2 className="font-primary font-bold text-[28px] leading-[36px] md:text-[40px] md:leading-[52px] text-text-primary">
+          <h2 className="font-primary font-bold text-[28px] leading-[36px] md:text-[50px] md:leading-[73px] text-text-primary">
             From <span className="text-brand italic">scroll</span> to doorstep
             <br />
             in three steps.
@@ -79,10 +79,10 @@ export default function ScrollToBite() {
               </div>
               {/* Content */}
               <div className="p-5 md:p-6">
-                <h3 className="font-primary font-semibold text-base md:text-lg text-text-primary mb-2">
+                <h3 className="font-primary font-semibold text-base md:text-xl text-text-primary mb-2">
                   {step.title}
                 </h3>
-                <p className="font-secondary text-sm text-text-secondary leading-relaxed">
+                <p className="font-secondary text-sm md:text-base text-text-secondary leading-relaxed">
                   {step.description}
                 </p>
               </div>
