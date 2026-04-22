@@ -70,7 +70,7 @@ export default function ScrollToBite() {
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeUp}
-              className="rounded-2xl overflow-hidden bg-white shadow-sm"
+              className="rounded-2xl overflow-hidden bg-white shadow-[0_1px_2px_rgba(0,0,0,0.03)]"
             >
               {/* Illustration Area */}
               <div className={`relative h-48 md:h-56 w-full ${step.bgColor}`}>

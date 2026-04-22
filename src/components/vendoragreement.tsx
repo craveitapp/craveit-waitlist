@@ -249,8 +249,8 @@ export default function VendorAgreementSection() {
             </p>
             <p className="mt-3">
               Notify us at{" "}
-              <a href="mailto:vendors@getcraveit.com" className="text-brand">
-                vendors@getcraveit.com
+              <a href="mailto:support@getcraveit.com" className="text-brand">
+                support@getcraveit.com
               </a>{" "}
               if your menu or food changes significantly so we can update your listing.
             </p>
