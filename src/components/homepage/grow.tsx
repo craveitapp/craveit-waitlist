@@ -1,10 +1,13 @@
 "use client";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { easeOut, motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
 import TallyButton from "../TallyBtn";
 
 export default function Grow() {
+  const router = useRouter();
   const features = [
     "No setup cost — you only pay when you earn",
     "Delivery is handled — you just keep cooking",
@@ -54,7 +57,7 @@ export default function Grow() {
                 For Vendors
               </span>
 
-              <h2 className="font-primary font-semibold text-[28px] leading-[38px] md:text-[40px] md:leading-20 text-text-primary">
+              <h2 className="font-primary font-semibold text-[28px] leading-[38px] md:text-[40px] md:leading-[64px] text-text-primary">
                 Grow your business where
                 <br className="hidden md:inline" /> customers are
                 <br className="hidden md:inline" /> already searching.
@@ -91,12 +94,20 @@ export default function Grow() {
                 ))}
               </div>
 
-              {/* CTA Button */}
-              <TallyButton
-                formId="wdL4vy"
-                label="Join The Waitlist"
-                className="cursor-pointer mt-4 font-primary font-semibold rounded-full bg-brand p-6 md:px-5 md:py-7 md:text-base text-sm text-white shadow-md transition duration-300 ease-in-out hover:bg-transparent hover:text-brand hover:border hover:border-brand"
-              />
+              {/* CTA Buttons */}
+              <div className="flex flex-wrap items-center gap-4 mt-4">
+                <TallyButton
+                  formId="wdL4vy"
+                  label="Join The Waitlist"
+                  className="cursor-pointer font-primary font-semibold rounded-full bg-brand p-6 md:px-5 md:py-7 md:text-base text-sm text-white shadow-md transition duration-300 ease-in-out hover:bg-transparent hover:text-brand hover:border hover:border-brand"
+                />
+                <Button
+                  onClick={() => router.push("/vendor")}
+                  className="h-12 md:h-14 cursor-pointer px-6 md:px-8 font-primary font-semibold rounded-full bg-transparent text-sm md:text-base text-brand border border-brand shadow-md transition duration-300 ease-in-out hover:bg-brand hover:text-white"
+                >
+                  Learn More
+                </Button>
+              </div>
             </motion.div>
           </div>
         </div>

@@ -98,8 +98,8 @@ export default function PrivacyPolicySection() {
               We comply with the Nigeria Data Protection Act 2023 and its General Application
               and Implementation Directive 2025. If you have any questions about this policy or
               how we handle your data contact us at{" "}
-              <a href="mailto:privacy@getcraveit.com" className="text-brand">
-                privacy@getcraveit.com
+              <a href="mailto:support@getcraveit.com" className="text-brand">
+                support@getcraveit.com
               </a>
               .
             </p>
@@ -343,8 +343,8 @@ export default function PrivacyPolicySection() {
               CraveIt is not intended for anyone under the age of 18. We do not knowingly
               collect personal information from children. If you believe a child has provided us
               with personal information contact us at{" "}
-              <a href="mailto:privacy@getcraveit.com" className="text-brand">
-                privacy@getcraveit.com
+              <a href="mailto:support@getcraveit.com" className="text-brand">
+                support@getcraveit.com
               </a>{" "}
               and we will delete it promptly.
             </p>
@@ -374,8 +374,8 @@ export default function PrivacyPolicySection() {
             <p>
               For any questions about this privacy policy or how we handle your personal
               information contact us at{" "}
-              <a href="mailto:privacy@getcraveit.com" className="text-brand">
-                privacy@getcraveit.com
+              <a href="mailto:support@getcraveit.com" className="text-brand">
+                support@getcraveit.com
               </a>
               .
             </p>

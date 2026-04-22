@@ -92,8 +92,8 @@ export default function TermsOfServiceSection() {
             <p>
               Welcome to CraveIt. By downloading the app, creating an account, or placing an
               order you agree to these terms. If anything is unclear contact{" "}
-              <a href="mailto:hello@getcraveit.com" className="text-brand">
-                hello@getcraveit.com
+              <a href="mailto:support@getcraveit.com" className="text-brand">
+                support@getcraveit.com
               </a>
               .
             </p>

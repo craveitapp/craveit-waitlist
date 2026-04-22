@@ -4,8 +4,8 @@ import Link from "next/link";
 const Footer = () => {
   const quickLinks = [
     { name: "Vendors", href: "/vendor" },
-    { name: "Blog", href: "#" },
-    { name: "Contact Us", href: "mailto:getcraveitapp@gmail.com" },
+    // { name: "Blog", href: "#" },
+    { name: "Contact Us", href: "mailto:support@getcraveit.com" },
   ];
 
   const support = [

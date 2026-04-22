@@ -63,7 +63,7 @@ export default function VendorReq() {
                       ease: easeOut,
                       delay: index * 0.1,
                     }}
-                    className="flex items-start gap-3 md:bg-white md:rounded-xl py-2 md:p-4 md:shadow-sm"
+                    className="flex items-start gap-3 md:bg-white md:rounded-xl py-2 md:p-4 md:shadow-[0_1px_2px_rgba(0,0,0,0.03)]"
                   >
                     <div className="w-6 h-6 rounded-full bg-brand flex items-center justify-center shrink-0 mt-0.5">
                       <svg
