@@ -47,7 +47,6 @@ function Section({
   );
 }
 
-/* ================= Main Component ================= */
 export default function VendorAgreementSection() {
   return (
     <>
