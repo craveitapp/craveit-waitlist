@@ -31,7 +31,7 @@ export default function Experience() {
               <TallyButton
                 formId="wgBvg1"
                 label="Join The Waitlist"
-                className="cursor-pointer font-primary font-semibold rounded-full bg-brand p-6 md:px-5 md:py-7 md:text-base text-sm text-white shadow-md transition duration-300 ease-in-out hover:bg-transparent hover:text-brand hover:border hover:border-brand"
+                className="cursor-pointer font-primary font-semibold rounded-full bg-brand px-4 py-6 md:px-5 md:py-7 md:text-base text-sm text-white shadow-md transition duration-300 ease-in-out hover:bg-transparent hover:text-brand hover:border hover:border-brand"
               />
             </motion.div>
 

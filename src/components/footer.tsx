@@ -5,7 +5,7 @@ const Footer = () => {
   const quickLinks = [
     { name: "Vendors", href: "/vendor" },
     // { name: "Blog", href: "#" },
-    { name: "Contact Us", href: "mailto:support@getcraveit.com" },
+    { name: "Contact Us", href: "/contactus" },
   ];
 
   const support = [
@@ -16,9 +16,9 @@ const Footer = () => {
 
   const social = [
     { name: "X (Formerly Twitter)", href: "https://x.com/getcraveit" },
-    { name: "TikTok", href: "http://tiktok.com/@getcraveit" },
-    { name: "LinkedIn", href: "http://linkedin.com/company/getcraveit" },
-    { name: "Facebook", href: "http://facebook.com/getcraveit" },
+    { name: "TikTok", href: "https://tiktok.com/@getcraveit" },
+    { name: "LinkedIn", href: "https://linkedin.com/company/getcraveit" },
+    { name: "Facebook", href: "https://facebook.com/getcraveit" },
   ];
 
   return (

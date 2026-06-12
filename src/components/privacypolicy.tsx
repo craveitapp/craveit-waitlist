@@ -155,6 +155,12 @@ export default function PrivacyPolicySection() {
               <li>Technical logs including errors and crash reports</li>
             </ul>
 
+            <p className="mt-4">
+              Users may browse certain features of CraveIt as a guest without creating an
+              account. Account registration is only required for features such as placing
+              orders, saving meals, following vendors, submitting reviews, and managing orders.
+            </p>
+
             <h3 className="font-semibold text-text-primary mt-4">
               Information from third parties
             </h3>

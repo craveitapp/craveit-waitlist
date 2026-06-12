@@ -14,7 +14,7 @@ declare global {
           width?: string;
           emojiText?: string;
           emojiAnimation?: string;
-        }
+        },
       ) => void;
     };
   }
@@ -38,7 +38,7 @@ const TallyButton: React.FC<TallyButtonProps> = ({
   useEffect(() => {
     //  Inject Tally script only once
     const existingScript = document.querySelector(
-      'script[src="https://tally.so/widgets/embed.js"]'
+      'script[src="https://tally.so/widgets/embed.js"]',
     );
     if (existingScript) return;
 
@@ -73,7 +73,7 @@ const TallyButton: React.FC<TallyButtonProps> = ({
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }} className="flex ">
       <Button
         onClick={handleClick}
-        className={`rounded-xl bg-primary px-6 py-3 shadow-lg hover:bg-secondary transition ${className}`}
+        className={`rounded-xl bg-primary px-4 py-3 shadow-lg hover:bg-secondary transition ${className}`}
       >
         {label}
       </Button>
