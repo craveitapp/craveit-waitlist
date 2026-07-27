@@ -1,0 +1,607 @@
+@import "tailwindcss";
+
+:root {
+  /* Core Colors */
+  --color-brand: #E96029;
+  --color-brand-hover: #ff8255;
+  --color-brand-light: #F8EEE0;
+
+  /* Text Colors */
+  --color-text-primary: #131927;
+  --color-text-secondary: #6D717F;
+  --color-text-muted: #CCCCCC;
+
+  /* Background Colors */
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #FAF7F2;
+  --color-bg-cream: #F8EEE0;
+  --color-bg-dark: #1C1208;
+
+  /* Semantic Aliases for easy usage */
+  --color-primary: var(--color-brand);
+  --color-secondary: var(--color-text-secondary);
+  --background: var(--color-bg-primary);
+  --foreground: var(--color-text-primary);
+}
+
+@theme inline {
+  /* Color Tokens */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand: var(--color-brand);
+  --color-brand-hover: var(--color-brand-hover);
+  --color-brand-light: var(--color-brand-light);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-muted: var(--color-text-muted);
+  --color-bg-primary: var(--color-bg-primary);
+  --color-bg-secondary: var(--color-bg-secondary);
+  --color-bg-cream: var(--color-bg-cream);
+  --color-bg-dark: var(--color-bg-dark);
+
+  /* Font Tokens */
+  --font-primary: var(--font-primary);
+  --font-secondary: var(--font-secondary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --color-primary: #E96029;
+    --color-text: #ededed;
+    --color-bg: #0a0a0a;
+  }
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-secondary), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Font Utility Classes */
+.font-primary {
+  font-family: var(--font-primary), Georgia, serif;
+}
+
+.font-secondary {
+  font-family: var(--font-secondary), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global container — matches navbar width */
+@layer base {
+  .craveit-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* Nav responsive */
+.nav-burger {
+  display: none;
+}
+
+.nav-mobile-panel {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .nav-desktop {
+    display: none !important;
+  }
+
+  .nav-cta-desktop {
+    display: none !important;
+  }
+
+  .nav-burger {
+    display: inline-flex !important;
+  }
+
+  .nav-mobile-panel {
+    display: block !important;
+  }
+
+  .nav-inner {
+    grid-template-columns: 1fr auto !important;
+  }
+}
+
+/* Reveal-on-scroll */
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+[data-reveal] {
+  animation: revealUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 26%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Marquee */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes livePulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  70%,
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+/* Vendor app preview */
+@keyframes vendorScreenScroll {
+
+  0%,
+  12% {
+    object-position: top;
+  }
+
+  88%,
+  100% {
+    object-position: bottom;
+  }
+}
+
+@keyframes vaToast {
+
+  0%,
+  4% {
+    opacity: 0;
+    transform: translateY(-140%);
+  }
+
+  12%,
+  46% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  54%,
+  100% {
+    opacity: 0;
+    transform: translateY(-140%);
+  }
+}
+
+@keyframes vaType {
+
+  0%,
+  60%,
+  100% {
+    opacity: 0;
+    transform: translateY(6px) scale(0.96);
+  }
+
+  8%,
+  52% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes vaReply {
+
+  0%,
+  58% {
+    opacity: 0;
+    transform: translateY(8px) scale(0.96);
+  }
+
+  66%,
+  96% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes vaDot {
+
+  0%,
+  80%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.45;
+  }
+
+  40% {
+    transform: translateY(-4px);
+    opacity: 1;
+  }
+}
+
+@keyframes vaBadge {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.18);
+  }
+}
+
+.vendor-track:hover {
+  animation-play-state: paused !important;
+}
+
+.vendor-phone {
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s ease, border-color 0.45s ease;
+}
+
+.vendor-phone:hover {
+  transform: translateY(-14px) scale(1.05);
+  box-shadow: 0 34px 66px rgba(233, 96, 41, 0.28);
+  border-color: #E96029 !important;
+  z-index: 3;
+}
+
+.vendor-card {
+  transition: opacity 0.45s ease;
+}
+
+.vendor-track:hover .vendor-card {
+  opacity: 0.5;
+}
+
+.vendor-track:hover .vendor-card:hover {
+  opacity: 1;
+}
+
+/* Modal + FAQ */
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes faqOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero illustration float */
+@keyframes vhFloat {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+
+  50% {
+    transform: translateY(-12px) rotate(-0.6deg);
+  }
+}
+
+@keyframes vhSteam {
+  0% {
+    opacity: 0;
+    transform: translateY(6px) scaleY(0.7);
+  }
+
+  30% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-34px) scaleY(1.15);
+  }
+}
+
+@keyframes vhSpark {
+
+  0%,
+  100% {
+    transform: scale(0.6);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+@keyframes vhRing {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.5;
+  }
+
+  80%,
+  100% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+}
+
+/* Rider app preview */
+@keyframes rdFloat {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes rdKnob {
+
+  0%,
+  40% {
+    transform: translateX(0);
+  }
+
+  55%,
+  95% {
+    transform: translateX(30px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rdTrack {
+
+  0%,
+  40% {
+    background: #C9C0B3;
+  }
+
+  55%,
+  95% {
+    background: #1E7A44;
+  }
+
+  100% {
+    background: #C9C0B3;
+  }
+}
+
+@keyframes rdCardIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.96);
+  }
+
+  18%,
+  82% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.98);
+  }
+}
+
+@keyframes rdDraw {
+  0% {
+    stroke-dashoffset: 300;
+  }
+
+  60%,
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes rdPing {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  80%,
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+
+@keyframes rdBar {
+  0% {
+    transform: scaleY(0.15);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes rdCount {
+  0% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes rdMove {
+  0% {
+    offset-distance: 0%;
+  }
+
+  60%,
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes rdChip {
+
+  0%,
+  100% {
+    opacity: .35;
+    transform: translateX(8px);
+  }
+
+  25%,
+  80% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rhRoad {
+  to {
+    stroke-dashoffset: -48;
+  }
+}
+
+@keyframes rhPuff {
+  0% {
+    opacity: .5;
+    transform: translateX(0) scale(.6);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-26px) scale(1.4);
+  }
+}
+
+@keyframes rhBike {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes rhWheel {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ambDash {
+  to {
+    stroke-dashoffset: -28;
+  }
+}
+
+@keyframes ambBubble {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(-2deg);
+  }
+}
+
+@keyframes ambWave {
+
+  0%,
+  100% {
+    transform: rotate(-38deg);
+  }
+
+  50% {
+    transform: rotate(-26deg);
+  }
+}
+
+@keyframes ambShout {
+
+  0%,
+  100% {
+    transform: rotate(-16deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(-16deg) scale(1.05);
+  }
+}
+
+@keyframes ambSound {
+  0% {
+    opacity: 0;
+    transform: scale(.6);
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+}
