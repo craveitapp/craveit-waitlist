@@ -169,7 +169,7 @@ export default function Home() {
                   muted
                   loop
                   playsInline
-                  src="/videos/hero-video.MP4"
+                  src="/videos/hero-video.MOV"
                   className="h-full w-full object-cover"
                 />
               </PhoneFrame>
@@ -243,7 +243,7 @@ export default function Home() {
       </section>
 
       {/* Discover food + phone — sticky scroll */}
-      <StickyScrollReveal panels={stickyPanels} videoSrc="/videos/hero-video.MP4" />
+      <StickyScrollReveal panels={stickyPanels} videoSrc="/videos/hero-video.MOV" />
 
       {/* Built for trust */}
       <section className="w-full bg-bg-secondary py-[clamp(64px,9vw,96px)]">
