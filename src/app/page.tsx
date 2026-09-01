@@ -162,8 +162,8 @@ export default function Home() {
             </div>
           </div>
           <div data-reveal className="flex items-center justify-center md:justify-end">
-            <div className="relative flex items-center justify-center rounded-[40px] bg-[#EFDCC8] py-[clamp(28px,4vw,44px)] px-[clamp(28px,8vw,120px)] shadow-[inset_0_2px_12px_rgba(0,0,0,.06)]">
-              <PhoneFrame>
+            <div className="relative flex items-center justify-center rounded-[clamp(28px,5vw,40px)] bg-[#EFDCC8] py-[clamp(20px,4vw,44px)] px-[clamp(24px,8vw,120px)] shadow-[inset_0_2px_12px_rgba(0,0,0,.06)]">
+              <PhoneFrame width="clamp(180px,44vw,280px)">
                 <video
                   autoPlay
                   muted

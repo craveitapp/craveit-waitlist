@@ -78,31 +78,43 @@ export function PhoneFrame({
   width = 280,
 }: {
   children: React.ReactNode;
-  width?: number;
+  width?: number | string;
 }) {
   return (
     <div
-      className="relative rounded-[52px] border-[6px] border-[#2a2a2c] bg-gradient-to-b from-[#3a3a3c] to-[#1a1a1c] shadow-[0_0_0_1px_rgba(255,255,255,.08),0_25px_60px_rgba(0,0,0,.4),inset_0_1px_0_rgba(255,255,255,.12)]"
-      style={{ width, aspectRatio: "9/18.5" }}
+      className="relative border-[6px] border-[#2a2a2c] bg-gradient-to-b from-[#3a3a3c] to-[#1a1a1c] shadow-[0_0_0_1px_rgba(255,255,255,.08),0_25px_60px_rgba(0,0,0,.4),inset_0_1px_0_rgba(255,255,255,.12)]"
+      style={
+        {
+          "--pf-w": typeof width === "number" ? `${width}px` : width,
+          width: "var(--pf-w)",
+          aspectRatio: "9/18.5",
+          // corner radius tracks the frame width so smaller phones stay phone-shaped
+          borderRadius: "calc(var(--pf-w) * .186)",
+        } as React.CSSProperties
+      }
     >
       {/* Titanium frame highlight */}
       <div
-        className="absolute inset-0 rounded-[46px] pointer-events-none"
+        className="absolute inset-0 pointer-events-none"
         style={{
+          borderRadius: "calc(var(--pf-w) * .164)",
           boxShadow: "inset 0 1px 0 rgba(255,255,255,0.15), inset 0 -1px 0 rgba(0,0,0,0.3)",
         }}
       />
       {/* Side buttons */}
-      <div className="absolute top-[100px] left-[-8px] w-[2px] h-[28px] bg-[#4a4a4c] rounded-l-sm" />
-      <div className="absolute top-[140px] left-[-8px] w-[2px] h-[48px] bg-[#4a4a4c] rounded-l-sm" />
-      <div className="absolute top-[185px] left-[-8px] w-[2px] h-[48px] bg-[#4a4a4c] rounded-l-sm" />
-      <div className="absolute top-[135px] right-[-8px] w-[2px] h-[65px] bg-[#4a4a4c] rounded-r-sm" />
+      <div className="absolute top-[17.4%] left-[-8px] w-[2px] h-[4.9%] bg-[#4a4a4c] rounded-l-sm" />
+      <div className="absolute top-[24.3%] left-[-8px] w-[2px] h-[8.3%] bg-[#4a4a4c] rounded-l-sm" />
+      <div className="absolute top-[32.1%] left-[-8px] w-[2px] h-[8.3%] bg-[#4a4a4c] rounded-l-sm" />
+      <div className="absolute top-[23.5%] right-[-8px] w-[2px] h-[11.3%] bg-[#4a4a4c] rounded-r-sm" />
       {/* Screen */}
-      <div className="relative w-full h-full rounded-[46px] overflow-hidden bg-black">
+      <div
+        className="relative w-full h-full overflow-hidden bg-black"
+        style={{ borderRadius: "calc(var(--pf-w) * .164)" }}
+      >
         {children}
 
         {/* Dynamic Island */}
-        <div className="absolute top-[11px] left-1/2 -translate-x-1/2 w-[37%] min-w-[80px] h-[30px] bg-black rounded-full z-20 shadow-[0_0_4px_rgba(0,0,0,0.5)]" />
+        <div className="absolute top-[1.9%] left-1/2 -translate-x-1/2 w-[37%] h-[5.2%] bg-black rounded-full z-20 shadow-[0_0_4px_rgba(0,0,0,0.5)]" />
       </div>
     </div>
   );
