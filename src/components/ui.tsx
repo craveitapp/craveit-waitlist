@@ -1,7 +1,7 @@
 export function GooglePlayBadge() {
   return (
     <a
-      href="#"
+      href="https://play.google.com/store/apps/details?id=com.getcraveit.craveit"
       className="inline-flex items-center gap-[8px] sm:gap-[11px] bg-text-primary rounded-full py-[9px] sm:py-[11px] px-[14px] sm:px-[20px] no-underline shadow-[0_6px_16px_rgba(19,25,39,.18)]"
     >
       <svg
@@ -41,7 +41,7 @@ export function GooglePlayBadge() {
 export function AppStoreBadge() {
   return (
     <a
-      href="#"
+      href="https://apps.apple.com/ng/app/craveit-i-food-delivery/id6769011202"
       className="inline-flex items-center gap-[8px] sm:gap-[11px] bg-text-primary rounded-full py-[9px] sm:py-[11px] px-[14px] sm:px-[20px] no-underline shadow-[0_6px_16px_rgba(19,25,39,.18)]"
     >
       <svg

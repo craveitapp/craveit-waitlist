@@ -2,9 +2,11 @@ import Link from "next/link";
 import { isPageVisible } from "@/config/page-visibility";
 
 const companyLinks = [
+  { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Careers", href: "/careers" },
   { name: "Blog", href: "/blog" },
+  { name: "Contact us", href: "/contactus" },
 ];
 
 const quickLinks = [
@@ -12,7 +14,6 @@ const quickLinks = [
   { name: "Become a rider", href: "/rider" },
   { name: "Ambassadors", href: "/ambassador" },
   { name: "FAQ", href: "/faq" },
-  { name: "Contact us", href: "/contactus" },
 ];
 
 const legalLinks = [

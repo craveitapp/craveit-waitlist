@@ -19,8 +19,8 @@ const dmSans = DM_Sans({
 });
 
 export const metadata = {
-  title: "Craveit - Food Delivery Service",
-  description: "Scroll, order, deliver, repeat — Craveit makes food delivery easy!",
+  title: "Craveit | Order Food Online - Delivery Near You",
+  description: "Scroll, order, deliver, repeat. Craveit makes food delivery easy!",
   icons: {
     icon: [
       { url: "/favicon.ico" },

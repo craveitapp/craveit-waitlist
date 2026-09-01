@@ -20,6 +20,8 @@ const marqueeItems = [
   "Uwani",
   "New Haven",
   "Ogui Road",
+  "Trans-Ekulu",
+  "Agbani Road",
 ];
 
 const scrollSteps = [
@@ -77,7 +79,7 @@ const homeFaqData = [
   },
   {
     q: "Which areas does Craveit deliver to?",
-    a: "We deliver across Enugu, New Haven, Independence Layout, Uwani, Ogui Road, and GRA. If you are in one of these areas you are already in our delivery zone.",
+    a: "We deliver across Enugu, New Haven, Independence Layout, Uwani, Ogui Road, GRA, Trans-Ekulu, and Agbani Road. If you are in one of these areas you are already in our delivery zone.",
   },
   {
     q: "I am a food vendor. How do I get my food on Craveit?",
@@ -95,21 +97,21 @@ const homeFaqData = [
 
 const stickyPanels = [
   {
-    eyebrow: "Discover",
-    heading: "Scroll meal videos",
-    headingAccent: "that make you crave it.",
+    eyebrow: "See",
+    heading: "Before you taste it,",
+    headingAccent: "your eyes eat first.",
     description:
-      "Real food from real vendors near you, shot the way it actually looks. Keep scrolling short clips until something makes you stop — no static menus, no guesswork, just food you can already taste.",
+      "Every meal on craveit is a short video from a vendor near you, shot as the food actually looks. Keep scrolling. When something makes you stop, it's already one tap from your cart.",
     bg: "#FBF3E6",
     eyebrowColor: "#E96029",
     accentColor: "#E96029",
   },
   {
     eyebrow: "Order",
-    heading: "Tap once, and it's",
-    headingAccent: "on its way in seconds.",
+    heading: "From craving",
+    headingAccent: "to cart in seconds.",
     description:
-      "Found the meal you want? Tap it and confirm in seconds. No endless steps, no rebuilding your cart — a fast, satisfying checkout that sends your order straight to the kitchen.",
+      "You saw it, you want it, so take it. Choose how you want your meal, confirm, and the vendor is already cooking before you've put your phone down.",
     bg: "#FAF7F2",
     eyebrowColor: "#1B4D3E",
     accentColor: "#1B4D3E",
@@ -117,10 +119,10 @@ const stickyPanels = [
   },
   {
     eyebrow: "Track",
-    heading: "Follow every bite",
-    headingAccent: "from kitchen to your door.",
+    heading: "Know exactly",
+    headingAccent: "where your food is.",
     description:
-      "Watch your rider move across the map in real time and know exactly when your food will arrive. Live updates at every step mean you're never left guessing where your meal is.",
+      "From the moment the kitchen starts cooking to the knock on your door, you can see where your order is. Live updates at every step, so you're never left wondering.",
     bg: "#FCE9DB",
     eyebrowColor: "#E96029",
     accentColor: "#E96029",
@@ -159,7 +161,7 @@ export default function Home() {
               <AppStoreBadge />
             </div>
           </div>
-          <div data-reveal className="flex items-center justify-center">
+          <div data-reveal className="flex items-center justify-center md:justify-end">
             <div className="relative flex items-center justify-center rounded-[40px] bg-[#EFDCC8] py-[clamp(28px,4vw,44px)] px-[clamp(28px,8vw,120px)] shadow-[inset_0_2px_12px_rgba(0,0,0,.06)]">
               <PhoneFrame>
                 <video

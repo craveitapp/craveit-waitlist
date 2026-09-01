@@ -49,7 +49,7 @@ export default function PageHero({
             {children}
           </div>
           {illustration && (
-            <div data-reveal className="flex justify-center">
+            <div data-reveal className="flex justify-center md:justify-end">
               {illustration}
             </div>
           )}
