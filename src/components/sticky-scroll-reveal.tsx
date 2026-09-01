@@ -1,7 +1,5 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
-import { useReducedMotion } from "framer-motion";
 import { PhoneFrame } from "@/components/ui";
 
 interface Panel {
@@ -27,27 +25,6 @@ export default function StickyScrollReveal({
   panels: Panel[];
   videoSrc: string;
 }) {
-  const sectionRef = useRef<HTMLElement | null>(null);
-  const [inView, setInView] = useState(false);
-  const prefersReducedMotion = useReducedMotion();
-
-  // Toggle the MOBILE floating phone. We treat the section as "in view" only while
-  // its content band is near the viewport center — so the phone releases shortly
-  // after you leave the last panel, instead of lingering into the next section.
-  useEffect(() => {
-    const el = sectionRef.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(([entry]) => setInView(entry.isIntersecting), {
-      // Shrinks the "active" band to the middle ~30% of the screen.
-      // Top -35% delays the entrance slightly; bottom -55% cuts it off
-      // soon after the section's tail passes center.
-      rootMargin: "-35% 0px -55% 0px",
-      threshold: 0,
-    });
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-
   // One constant phone mockup — same video everywhere, never recolors or swaps.
   const phoneMedia = (
     <video
@@ -61,7 +38,7 @@ export default function StickyScrollReveal({
   );
 
   return (
-    <section ref={sectionRef} className="relative w-full bg-white">
+    <section className="relative w-full bg-white">
       <div className="flex flex-col md:flex-row items-stretch w-full">
         {/* LEFT COLUMN: colored text panels — each panel carries its OWN background.
             On mobile this is the whole width; content is NOT reduced for the phone. */}
@@ -69,7 +46,7 @@ export default function StickyScrollReveal({
           {panels.map((panel, i) => (
             <div
               key={i}
-              className="min-h-[82vh] md:min-h-screen flex items-center px-[24px] md:px-[clamp(40px,6vw,96px)] py-[clamp(48px,8vh,96px)]"
+              className="md:min-h-screen flex items-center px-[24px] md:px-[clamp(40px,6vw,96px)] py-[44px] md:py-[clamp(48px,8vh,96px)]"
               style={{ backgroundColor: panel.bg }}
             >
               <div className="max-w-[520px] w-full text-left">
@@ -114,25 +91,6 @@ export default function StickyScrollReveal({
           <div className="sticky top-0 h-screen flex items-center justify-center">
             <PhoneFrame width={280}>{phoneMedia}</PhoneFrame>
           </div>
-        </div>
-      </div>
-
-      {/* MOBILE ONLY: phone is FIXED to the viewport, floating bottom-right ON TOP
-          of the content (doesn't affect it). Fades + slides in when the section is
-          on screen, and out when you leave it. */}
-      <div
-        aria-hidden
-        className="md:hidden fixed bottom-0 right-0 z-40 pointer-events-none"
-        style={{
-          opacity: inView ? 1 : 0,
-          transform: inView ? "translateY(0)" : "translateY(28px)",
-          transition: prefersReducedMotion
-            ? "none"
-            : "opacity 450ms ease, transform 450ms ease",
-        }}
-      >
-        <div className="mb-[10px] mr-[10px]">
-          <PhoneFrame width={200}>{phoneMedia}</PhoneFrame>
         </div>
       </div>
     </section>
