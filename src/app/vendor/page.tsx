@@ -244,47 +244,123 @@ export default function VendorPage() {
       </section>
 
       {/* Auto-scrolling app preview */}
-      {/* <section className="w-full bg-bg-cream py-[clamp(56px,8vw,88px)] overflow-hidden">
+      <section className="w-full bg-bg-cream py-[clamp(56px,8vw,88px)] overflow-hidden">
         <div className="craveit-container text-center mb-[clamp(36px,5vw,52px)]">
-          <span className="font-secondary font-semibold text-[13px] tracking-[.16em] uppercase text-text-secondary">The vendor app</span>
-          <h2 className="font-primary font-semibold text-[clamp(28px,4.4vw,48px)] leading-[1.15] text-text-primary mt-[12px] mb-0">Run your kitchen from your <span className="italic text-brand">pocket.</span></h2>
+          <span className="font-secondary font-semibold text-[13px] tracking-[.16em] uppercase text-text-secondary">
+            The vendor app
+          </span>
+          <h2 className="font-primary font-semibold text-[clamp(28px,4.4vw,48px)] leading-[1.15] text-text-primary mt-[12px] mb-0">
+            Run your kitchen from your <span className="italic text-brand">pocket.</span>
+          </h2>
         </div>
-        <div className="w-full overflow-hidden" style={{ WebkitMaskImage: "linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)", maskImage: "linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)" }}>
+        <div
+          className="w-full overflow-hidden"
+          style={{
+            WebkitMaskImage: "linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)",
+            maskImage: "linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)",
+          }}
+        >
           <div className="vendor-track flex w-max animate-[marquee_72s_linear_infinite]">
             {appLoop.map((s, i) => (
               <div key={i} className="vendor-card w-[230px] shrink-0 mr-[28px]">
                 <div className="vendor-phone relative w-[230px] aspect-[9/19.5] rounded-[40px] overflow-hidden border-[6px] border-text-primary bg-white shadow-[0_20px_44px_rgba(0,0,0,.18)]">
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[74px] h-[18px] bg-text-primary rounded-b-[14px] z-[10]" />
-                  <div className="h-[64px] bg-brand flex items-end py-0 px-[16px] pb-[12px]"><span className="font-primary font-semibold text-[16px] text-white">{s.title}</span></div>
-                  <div className="p-[16px] flex flex-col gap-[12px] relative" style={{ height: "calc(100% - 64px)" }}>
-                    <img src={s.img} alt={s.title} className="absolute inset-0 w-full h-full object-cover object-top z-[5]" style={{ animation: "vendorScreenScroll 7s ease-in-out infinite alternate" }} />
+                  <div className="h-[64px] bg-brand flex items-end py-0 px-[16px] pb-[12px]">
+                    <span className="font-primary font-semibold text-[16px] text-white">
+                      {s.title}
+                    </span>
+                  </div>
+                  <div
+                    className="p-[16px] flex flex-col gap-[12px] relative"
+                    style={{ height: "calc(100% - 64px)" }}
+                  >
+                    <img
+                      src={s.img}
+                      alt={s.title}
+                      className="absolute inset-0 w-full h-full object-cover object-top z-[5]"
+                      style={{
+                        animation: "vendorScreenScroll 7s ease-in-out infinite alternate",
+                      }}
+                    />
                     {s.toast && (
-                      <div aria-hidden className="absolute top-[52px] left-[12px] right-[12px] z-[6] flex items-center gap-[10px] py-[10px] px-[12px] rounded-[14px] bg-white shadow-[0_10px_24px_rgba(19,25,39,.18)]" style={{ animation: "vaToast 6s ease-in-out infinite" }}>
-                        <span className="w-[30px] h-[30px] rounded-full bg-brand inline-flex items-center justify-center shrink-0" style={{ animation: "vaBadge 1.4s ease-in-out infinite" }}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" /><path d="M3 6h18M16 10a4 4 0 0 1-8 0" /></svg></span>
-                        <div className="flex-1 flex flex-col gap-[2px] min-w-0"><span className="font-secondary font-bold text-[12px] text-text-primary">New order · ₦7,600</span><span className="font-secondary text-[11px] text-text-secondary whitespace-nowrap overflow-hidden text-ellipsis">Party jollof &amp; chicken</span></div>
+                      <div
+                        aria-hidden
+                        className="absolute top-[52px] left-[12px] right-[12px] z-[6] flex items-center gap-[10px] py-[10px] px-[12px] rounded-[14px] bg-white shadow-[0_10px_24px_rgba(19,25,39,.18)]"
+                        style={{ animation: "vaToast 6s ease-in-out infinite" }}
+                      >
+                        <span
+                          className="w-[30px] h-[30px] rounded-full bg-brand inline-flex items-center justify-center shrink-0"
+                          style={{ animation: "vaBadge 1.4s ease-in-out infinite" }}
+                        >
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#fff"
+                            strokeWidth="2.4"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                            <path d="M3 6h18M16 10a4 4 0 0 1-8 0" />
+                          </svg>
+                        </span>
+                        <div className="flex-1 flex flex-col gap-[2px] min-w-0">
+                          <span className="font-secondary font-bold text-[12px] text-text-primary">
+                            New order · ₦7,600
+                          </span>
+                          <span className="font-secondary text-[11px] text-text-secondary whitespace-nowrap overflow-hidden text-ellipsis">
+                            Party jollof &amp; chicken
+                          </span>
+                        </div>
                       </div>
                     )}
                     {s.chat && (
-                      <div aria-hidden className="absolute left-[12px] right-[12px] bottom-[64px] z-[6] flex flex-col gap-[8px] items-start">
-                        <span className="inline-flex gap-[4px] items-center py-[9px] px-[12px] rounded-[14px_14px_14px_4px] bg-[#EFEAE3] shadow-[0_4px_12px_rgba(0,0,0,.08)]" style={{ animation: "vaType 5s ease-in-out infinite" }}>
-                          <span className="w-[6px] h-[6px] rounded-full bg-[#9AA0AD]" style={{ animation: "vaDot 1s ease-in-out infinite" }} />
-                          <span className="w-[6px] h-[6px] rounded-full bg-[#9AA0AD]" style={{ animation: "vaDot 1s ease-in-out .16s infinite" }} />
-                          <span className="w-[6px] h-[6px] rounded-full bg-[#9AA0AD]" style={{ animation: "vaDot 1s ease-in-out .32s infinite" }} />
+                      <div
+                        aria-hidden
+                        className="absolute left-[12px] right-[12px] bottom-[64px] z-[6] flex flex-col gap-[8px] items-start"
+                      >
+                        <span
+                          className="inline-flex gap-[4px] items-center py-[9px] px-[12px] rounded-[14px_14px_14px_4px] bg-[#EFEAE3] shadow-[0_4px_12px_rgba(0,0,0,.08)]"
+                          style={{ animation: "vaType 5s ease-in-out infinite" }}
+                        >
+                          <span
+                            className="w-[6px] h-[6px] rounded-full bg-[#9AA0AD]"
+                            style={{ animation: "vaDot 1s ease-in-out infinite" }}
+                          />
+                          <span
+                            className="w-[6px] h-[6px] rounded-full bg-[#9AA0AD]"
+                            style={{ animation: "vaDot 1s ease-in-out .16s infinite" }}
+                          />
+                          <span
+                            className="w-[6px] h-[6px] rounded-full bg-[#9AA0AD]"
+                            style={{ animation: "vaDot 1s ease-in-out .32s infinite" }}
+                          />
                         </span>
-                        <span className="self-end max-w-[78%] py-[9px] px-[12px] rounded-[14px_14px_4px_14px] bg-brand font-secondary text-[11.5px] leading-[1.4] text-white shadow-[0_6px_16px_rgba(233,96,41,.3)]" style={{ animation: "vaReply 5s ease-in-out infinite" }}>When will today&apos;s payout hit my account?</span>
+                        <span
+                          className="self-end max-w-[78%] py-[9px] px-[12px] rounded-[14px_14px_4px_14px] bg-brand font-secondary text-[11.5px] leading-[1.4] text-white shadow-[0_6px_16px_rgba(233,96,41,.3)]"
+                          style={{ animation: "vaReply 5s ease-in-out infinite" }}
+                        >
+                          When will today&apos;s payout hit my account?
+                        </span>
                       </div>
                     )}
                   </div>
                 </div>
                 <div className="py-[18px] px-[6px] text-center flex flex-col gap-[6px]">
-                  <h3 className="font-primary font-semibold text-[18px] text-text-primary m-0">{s.title}</h3>
-                  <p className="font-secondary text-[13.5px] leading-[1.6] text-text-secondary m-0">{s.caption}</p>
+                  <h3 className="font-primary font-semibold text-[18px] text-text-primary m-0">
+                    {s.title}
+                  </h3>
+                  <p className="font-secondary text-[13.5px] leading-[1.6] text-text-secondary m-0">
+                    {s.caption}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* CTA */}
       <CtaBand
