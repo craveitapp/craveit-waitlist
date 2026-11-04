@@ -23,6 +23,7 @@ const pageVisibility = {
   "/terms-of-service": true,
   "/refund-policy": true,
   "/vendor-agreement": true,
+  "/rider-policy": true,
 } as const;
 
 export type PagePath = keyof typeof pageVisibility;
