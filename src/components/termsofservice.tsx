@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { motion, easeOut } from "framer-motion";
+import { LegalSections, PartHeading } from "./legal-blocks";
+import { riderTermsBlocks } from "./rider-legal-content";
 
 const containerVariants = {
   hidden: {},
@@ -237,6 +239,9 @@ export default function TermsOfServiceSection() {
               </a>
             </p>
           </Section>
+
+          <PartHeading id="rider-terms" title="Rider Terms and Conditions" />
+          <LegalSections blocks={riderTermsBlocks} />
 
           <motion.div variants={fadeInUp} className="mt-12 pt-8 border-t border-[#E5E5E5]">
             <p className="font-secondary text-xs md:text-lg text-text-muted">

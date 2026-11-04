@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { motion, easeOut } from "framer-motion";
+import { LegalSections, PartHeading } from "./legal-blocks";
+import { riderPrivacyBlocks, riderPrivacyIntro } from "./rider-legal-content";
 
 const containerVariants = {
   hidden: {},
@@ -391,6 +393,15 @@ export default function PrivacyPolicySection() {
               information.
             </p>
           </Section>
+
+          <PartHeading id="rider-privacy" title="Rider Privacy and Personal Information" />
+          <motion.p
+            variants={fadeInUp}
+            className="mb-10 font-secondary text-sm md:text-lg leading-relaxed text-text-secondary"
+          >
+            {riderPrivacyIntro}
+          </motion.p>
+          <LegalSections blocks={riderPrivacyBlocks} />
         </motion.div>
       </section>
     </>

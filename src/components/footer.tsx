@@ -20,6 +20,7 @@ const legalLinks = [
   { name: "Privacy policy", href: "/privacy-policy" },
   { name: "Terms of service", href: "/terms-of-service" },
   { name: "Refund policy", href: "/refund-policy" },
+  { name: "Rider policy", href: "/rider-policy" },
 ];
 
 const socials = [
