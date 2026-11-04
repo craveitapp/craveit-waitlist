@@ -7,14 +7,12 @@ import Footer from "@/components/footer";
 const fraunces = Fraunces({
   variable: "--font-primary",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
 const dmSans = DM_Sans({
   variable: "--font-secondary",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
