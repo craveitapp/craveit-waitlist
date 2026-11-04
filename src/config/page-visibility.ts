@@ -6,7 +6,7 @@
  * - The link is removed from the navbar and footer.
  *
  * To hide a page, comment out its line or set it to `false`.
- * To show a page, make sure it is set to `true`.
+ * To show a page, make sure it is set to `true`...
  */
 
 const pageVisibility = {
